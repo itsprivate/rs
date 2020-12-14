@@ -17,7 +17,11 @@ if (isDev) {
       remote: `git@github.com:itsprivate/ts-test.git`,
       branch: `main`,
       // Only import the docs folder from a codebase.
-      patterns: ["data/reddit-stocks/**", "data/reddit-stocks-issues/**"],
+      patterns: [
+        "data/reddit-stocks/**",
+        "data/tweet-stocks/**",
+        "data/reddit-stocks-issues/**",
+      ],
     },
   });
 } else {
@@ -28,7 +32,11 @@ if (isDev) {
       remote: `https://github.com/itsprivate/ts.git`,
       branch: `main`,
       // Only import the docs folder from a codebase.
-      patterns: ["data/reddit-stocks/**", "data/reddit-stocks-issues/**"],
+      patterns: [
+        "data/reddit-stocks/**",
+        "data/tweet-stocks/**",
+        "data/reddit-stocks-issues/**",
+      ],
     },
   });
 }
@@ -36,7 +44,7 @@ plugins = plugins.concat([
   {
     resolve: `gatsby-theme-buzzing`,
     options: {
-      tweetTypeName: ["TweetsJson", "twitterStatusesUserTimelineMyTweet"],
+      tweetTypeName: ["TweetJson"],
       redditTypeName: ["RedditJson"],
       issueTypeName: ["RedditStocksIssuesJson"],
       localesPath: localesPath,
