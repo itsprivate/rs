@@ -17,7 +17,7 @@ if (isDev) {
       remote: `git@github.com:itsprivate/ts-test.git`,
       branch: `main`,
       // Only import the docs folder from a codebase.
-      patterns: ["data/reddit-top/**", "data/reddit-top-issues/**"],
+      patterns: ["data/reddit-stocks/**", "data/reddit-stocks-issues/**"],
     },
   });
 } else {
@@ -28,7 +28,7 @@ if (isDev) {
       remote: `https://github.com/itsprivate/ts.git`,
       branch: `main`,
       // Only import the docs folder from a codebase.
-      patterns: ["data/reddit-top/**", "data/reddit-top-issues/**"],
+      patterns: ["data/reddit-stocks/**", "data/reddit-stocks-issues/**"],
     },
   });
 }
@@ -38,21 +38,21 @@ plugins = plugins.concat([
     options: {
       tweetTypeName: ["TweetsJson", "twitterStatusesUserTimelineMyTweet"],
       redditTypeName: ["RedditJson"],
-      issueTypeName: ["RedditTopIssuesJson"],
+      issueTypeName: ["RedditStocksIssuesJson"],
       localesPath: localesPath,
       disqus: {
-        shortname: "reddit-top",
+        shortname: "stock-market",
       },
     },
   },
   {
     resolve: `gatsby-plugin-manifest`,
     options: {
-      name: `Reddit热门`,
-      short_name: `Reddit热门`,
+      name: `股市热门讨论`,
+      short_name: `股市热门`,
       start_url: `/`,
       lang: `zh`,
-      description: `用中文浏览Reddit上的热门内容`,
+      description: `用中文浏览外文股票社区里的热门讨论，美股`,
       background_color: `#f7f0eb`,
       theme_color: `#FF4500`,
       display: `standalone`,
@@ -62,7 +62,14 @@ plugins = plugins.concat([
           start_url: `/en/`,
           lang: `en`,
           name: `Reddit Top`,
-          short_name: `Reddit`,
+          short_name: `RedditTop`,
+          description: `The most popular posts on Reddit`,
+        },
+        {
+          start_url: `/zh-Hant/`,
+          lang: `zh-Hant`,
+          name: `Reddit Top`,
+          short_name: `RedditTop`,
           description: `The most popular posts on Reddit`,
         },
       ],
