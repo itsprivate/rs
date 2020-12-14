@@ -52,7 +52,7 @@ plugins = plugins.concat([
       short_name: `股市热门`,
       start_url: `/`,
       lang: `zh`,
-      description: `用中文浏览外文股票社区里的热门讨论，美股`,
+      description: `用中文浏览国外股票社区里的热门讨论`,
       background_color: `#f7f0eb`,
       theme_color: `#FF4500`,
       display: `standalone`,
@@ -61,16 +61,16 @@ plugins = plugins.concat([
         {
           start_url: `/en/`,
           lang: `en`,
-          name: `Reddit Top`,
-          short_name: `RedditTop`,
-          description: `The most popular posts on Reddit`,
+          name: `Buzzing on Stocks`,
+          short_name: `HotStocks`,
+          description: `See popular discussions in foreign stock communities in your native language`,
         },
         {
           start_url: `/zh-Hant/`,
           lang: `zh-Hant`,
-          name: `Reddit Top`,
-          short_name: `RedditTop`,
-          description: `The most popular posts on Reddit`,
+          name: `股市熱門討論`,
+          short_name: `股市熱門`,
+          description: `用中文瀏覽國外股票社區裡的熱門討論`,
         },
       ],
     },
@@ -88,10 +88,11 @@ plugins = plugins.concat([
 module.exports = {
   plugins: plugins,
   siteMetadata: {
-    title: `Buzzing on Reddit`,
-    author: `Reddit`,
-    description: `See what's buzzing on Reddit in your native language`,
-    siteUrl: "https://reddit.buzzing.cc",
+    title: `Buzzing on Stocks`,
+    author: `Buzzing.cc`,
+    description: `See popular discussions in foreign stock communities in your native language`,
+    keywords: ["buzzing", "stocks", "U.S. stocks"],
+    siteUrl: "https://stocks.buzzing.cc",
     menuLinks: [
       {
         name: "Weekly Selection",
@@ -100,6 +101,7 @@ module.exports = {
       {
         name: "RSS",
         url: "/rss.xml",
+        prefetch: false,
       },
     ],
     social: [
