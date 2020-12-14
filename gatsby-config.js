@@ -118,8 +118,18 @@ module.exports = {
     ],
     social: [
       {
-        name: `Reddit`,
-        url: `https://www.reddit.com/`,
+        name: `Reddit Stocks`,
+        url: `https://www.reddit.com/r/stocks`,
+        external: true,
+      },
+      {
+        name: `Reddit Investing`,
+        url: `https://www.reddit.com/r/investing`,
+        external: true,
+      },
+      {
+        name: `Charlie Bilello's twitter`,
+        url: `https://twitter.com/charliebilello`,
         external: true,
       },
     ],
