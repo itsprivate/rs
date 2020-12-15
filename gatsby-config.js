@@ -60,7 +60,7 @@ plugins = plugins.concat([
   {
     resolve: `gatsby-plugin-manifest`,
     options: {
-      name: `股市热门讨论`,
+      name: `国外股市热门`,
       short_name: `股市热门`,
       start_url: `/`,
       lang: `zh`,
@@ -80,7 +80,7 @@ plugins = plugins.concat([
         {
           start_url: `/zh-Hant/`,
           lang: `zh-Hant`,
-          name: `股市熱門討論`,
+          name: `國外股市熱門`,
           short_name: `股市熱門`,
           description: `用中文瀏覽國外股票社區裡的熱門討論`,
         },
