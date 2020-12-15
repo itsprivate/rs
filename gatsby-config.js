@@ -106,10 +106,10 @@ module.exports = {
     keywords: ["buzzing", "stocks", "U.S. stocks"],
     siteUrl: "https://stocks.buzzing.cc",
     menuLinks: [
-      {
-        name: "Weekly Selection",
-        url: "/issues",
-      },
+      // {
+      //   name: "Weekly Selection",
+      //   url: "/issues",
+      // },
       {
         name: "RSS",
         url: "/rss.xml",
