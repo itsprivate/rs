@@ -92,7 +92,7 @@ plugins = plugins.concat([
     options: {
       // You can add multiple tracking ids and a pageview event will be fired for all of them.
       trackingIds: [
-        "G-GQVR44BC8T", // Google Analytics / GA
+        "G-PK7QMY800D", // Google Analytics / GA
       ],
     },
   },
