@@ -13,7 +13,7 @@ export default function Bio() {
         See popular discussions in foreign stock communities in your native
         language on{" "}
         <LinkUI as={Link} to="/">
-          reddit.buzzing.cc
+          stocks.buzzing.cc
         </LinkUI>
       </Trans>
     </>
