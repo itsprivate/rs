@@ -22,10 +22,7 @@ if (isDev) {
         "data/reddit-stocks/**",
         "data/tweet-stocks/**",
         "data/reddit-stocks-issues/**",
-        "data/reddit-placeholder/1.json",
-        "data/tweet-placeholder/1.json",
-        "data/hn-placeholder/1.json",
-        "data/ph-placeholder/1.json",
+        "data/*-placeholder/1.json",
       ],
     },
   });
@@ -41,10 +38,7 @@ if (isDev) {
         "data/reddit-stocks/**",
         "data/tweet-stocks/**",
         "data/reddit-stocks-issues/**",
-        "data/reddit-placeholder/1.json",
-        "data/tweet-placeholder/1.json",
-        "data/hn-placeholder/1.json",
-        "data/ph-placeholder/1.json",
+        "data/*-placeholder/1.json",
       ],
     },
   });
