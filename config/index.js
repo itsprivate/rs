@@ -8,6 +8,10 @@ const siteMetadata = {
   keywords: ["buzzing", "美股", "股票", "股市"],
   menuLinks: [
     {
+      name: "每周精选",
+      url: "/issues",
+    },
+    {
       name: "RSS",
       url: "/rss.xml",
       prefetch: false,
@@ -44,6 +48,10 @@ const siteMetadata = {
       siteUrl: "https://stocks.buzzing.cc",
       menuLinks: [
         {
+          name: "Weekly Selection",
+          url: "/en/issues",
+        },
+        {
           name: "RSS",
           url: "/en/rss.xml",
           prefetch: false,
@@ -57,6 +65,10 @@ const siteMetadata = {
       description: "用中文瀏覽國外股票社區裡的熱門討論",
       keywords: ["buzzing", "美股", "股票", "股市"],
       menuLinks: [
+        {
+          name: "每週精選",
+          url: "/zh-Hant/issues",
+        },
         {
           name: "RSS",
           url: "/zh-Hant/rss.xml",

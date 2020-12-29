@@ -21,7 +21,7 @@ if (isDev) {
       patterns: [
         "data/reddit-stocks/**",
         "data/tweet-stocks/**",
-        "data/reddit-stocks-issues/**",
+        "data/stocks-issues/**",
         "data/*-placeholder/1.json",
       ],
     },
@@ -37,7 +37,7 @@ if (isDev) {
       patterns: [
         "data/reddit-stocks/**",
         "data/tweet-stocks/**",
-        "data/reddit-stocks-issues/**",
+        "data/stocks-issues/**",
         "data/*-placeholder/1.json",
       ],
     },
@@ -49,7 +49,7 @@ plugins = plugins.concat([
     options: {
       tweetTypeName: ["TweetJson"],
       redditTypeName: ["RedditJson"],
-      issueTypeName: ["RedditStocksIssuesJson"],
+      issueTypeName: ["StocksIssuesJson"],
       localesPath: localesPath,
       disqus: {
         shortname: "stock-market",
