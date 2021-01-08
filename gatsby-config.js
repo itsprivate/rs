@@ -17,6 +17,7 @@ if (isDev) {
       name: `RedditTop`,
       remote: `git@github.com:itsprivate/ts-test.git`,
       branch: `main`,
+      fetchOptions: ["--depth", 1],
       // Only import the docs folder from a codebase.
       patterns: [
         "data/reddit-stocks/**",
@@ -33,6 +34,7 @@ if (isDev) {
       name: `RedditTop`,
       remote: `https://github.com/itsprivate/ts.git`,
       branch: `main`,
+      fetchOptions: ["--depth", 1],
       // Only import the docs folder from a codebase.
       patterns: [
         "data/reddit-stocks/**",

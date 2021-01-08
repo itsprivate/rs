@@ -6,6 +6,8 @@ const siteMetadata = {
   shortTitle: "股市热门",
   description: "用中文浏览国外股票社区里的热门讨论",
   keywords: ["buzzing", "美股", "股票", "股市"],
+  telegram: "buzzingcc",
+  telegram_chat_id: "-1001406368978",
   menuLinks: [
     {
       name: "每周精选",
