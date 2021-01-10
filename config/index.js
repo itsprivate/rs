@@ -1,6 +1,6 @@
 const siteMetadata = {
   siteUrl: "https://stocks.buzzing.cc",
-  author: `Internet`,
+  author: `Buzzing.cc`,
   locale: "zh",
   title: "国外股市热门",
   shortTitle: "股市热门",
