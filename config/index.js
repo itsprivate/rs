@@ -13,11 +13,6 @@ const siteMetadata = {
       name: "每周精选",
       url: "/issues",
     },
-    {
-      name: "RSS",
-      url: "/rss.xml",
-      prefetch: false,
-    },
   ],
   subscriptions: [
     {
