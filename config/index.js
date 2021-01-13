@@ -70,11 +70,6 @@ const siteMetadata = {
           name: "Weekly Selection",
           url: "/en/issues",
         },
-        {
-          name: "RSS",
-          url: "/en/rss.xml",
-          prefetch: false,
-        },
       ],
     },
     {
@@ -87,11 +82,6 @@ const siteMetadata = {
         {
           name: "每週精選",
           url: "/zh-Hant/issues",
-        },
-        {
-          name: "RSS",
-          url: "/zh-Hant/rss.xml",
-          prefetch: false,
         },
       ],
     },
