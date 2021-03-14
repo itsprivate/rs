@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[国外股市热门]]></title><description><![CDATA[用中文浏览国外股票社区里的热门讨论]]></description><link>https://stocks.buzzing.cc</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 14 Mar 2021 07:04:27 GMT</lastBuildDate><language><![CDATA[zh-Hant]]></language><item><title><![CDATA[從我的GME + Stimmy tendies中買了一頭大象來壯大我們的wsb軍隊。]]></title><link>https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4krqm/bought_an_elephant_from_my_gme_stimmy_tendies_to/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4krqm/bought_an_elephant_from_my_gme_stimmy_tendies_to/</guid><pubDate>Sun, 14 Mar 2021 06:41:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[PSA：如果您最近離開了Robinhood，請仔細檢查您的轉移成本基礎!]]></title><description><![CDATA[如果你和我一樣，用最近的事件作爲藉口離開小丑車
+Robinhood，仔細覈對轉讓股份的成本基礎是
+正確的。Robinhood顯然設法給Vanguard發送了隨機號碼，讓我的...
+投資組合。
+
+即使在真正簡單的情況下，一年前買了幾隻股票，並... ...]]></description><link>https://stocks.buzzing.cc/reddit/r/investing/comments/m4ojn2/psa_if_you_recently_left_robinhood_double_check/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/investing/comments/m4ojn2/psa_if_you_recently_left_robinhood_double_check/</guid><pubDate>Sun, 14 Mar 2021 06:41:00 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;If you, like me, used recent events as an excuse to leave the clowncar Robinhood, double-check that the cost basis for the transferred shares is correct. Robinhood apparently managed to send Vanguard random numbers for my portfolio.&lt;/p&gt;
+
+&lt;p&gt;Even on really simple cases of a few shares bought a year ago and never traded at any point later, the cost basis is just... wrong? For my entire portfolio, plus a few dollars/share here, minus a few dollars/share there, not really any reasoning for any of it, but definitely an overall much lower total cost basis than actually should have been there.&lt;/p&gt;
+
+&lt;p&gt;If you haven’t left Robinhood yet, get out. This kind of technical incompetence isn’t just embarrassing, it’s scary. You don’t want to keep your money in a clown car.&lt;/p&gt;
+&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[WSB和Apes rn]]></title><link>https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4mp80/wsb_and_apes_rn/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4mp80/wsb_and_apes_rn/</guid><pubDate>Sun, 14 Mar 2021 06:41:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[採納了石井和HODL'ing的強勢!]]></title><link>https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4kjxv/adopted_ishimwe_and_hodling_strong/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4kjxv/adopted_ishimwe_and_hodling_strong/</guid><pubDate>Sun, 14 Mar 2021 05:24:56 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[迷你指數基金策略(結果經得起考驗)]]></title><description><![CDATA[前不久，我讀到WSJ的這篇文章。
+https://www.wsj.com/articles/buying-just-one-share-of-stock-is-easier-than-ever-but-should-you-11601825871
+
+文章談到，既然交易費用這麼低，而且比
+曾經擁有一股，爲什麼不買股票一次一個。它...]]></description><link>https://stocks.buzzing.cc/reddit/r/investing/comments/m4j5zg/miniindex_fund_strategy_with_backtested_results/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/investing/comments/m4j5zg/miniindex_fund_strategy_with_backtested_results/</guid><pubDate>Sun, 14 Mar 2021 05:24:56 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;A little while ago I read this article from the WSJ: &lt;a href=&quot;https://www.wsj.com/articles/buying-just-one-share-of-stock-is-easier-than-ever-but-should-you-11601825871&quot;&gt;https://www.wsj.com/articles/buying-just-one-share-of-stock-is-easier-than-ever-but-should-you-11601825871&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The article talks about how since trading fees are so low, and it’s easier than ever to own one share, why not buy shares one at a time. It posed the idea of a mini-index fund that you could make just for yourself. &lt;em&gt;Rather than buy SPY, just buy one share of each of its components&lt;/em&gt;. I always thought the idea novel when you consider the diseconomies of scale in the asset management industry. So I decided to test out the idea with backtesting.&lt;/p&gt;
+
+&lt;p&gt;-I’ll be testing the mini-index fund strategy with Dow Jones Industrial Average Index (DJI)&lt;/p&gt;
+
+&lt;p&gt;-I’ll be using DIA as the comparable passive instrument.&lt;/p&gt;
+
+&lt;p&gt;-Using QuantConnect as my backtesting environment.&lt;/p&gt;
+
+&lt;p&gt;-To simulate round-trip trading costs, I liquidate holdings at end of all backtests.&lt;/p&gt;
+
+&lt;p&gt;-To further try to simulate real-world conditions, all backtests will have some excess cash, but not too much as if a real person was funding an investment account to buy something they already thought out. For example, if you want to buy one share of DIA at $286.00 you might deposit $300.00 in your account. Or if you need $4873.00 to buy one share of all the constituents of the DJI, you might round off your deposit at $4900.00.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Limitations/Things I’d try to incorporate if I wanted to explore this more&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;- All buying happened at the start of the backtesting period. A more realistic scenario to mimic small retail investors would be progressive buying as time goes on.&lt;/p&gt;
+
+&lt;p&gt;- Fees are based on the IBKR brokerage model, NOT INCLUDING IBKR LITE. I would like to simulate zero-fee trading, but the trick with that is that I’d have to account for costs associated with the sometimes less than optimal trade execution that is known to occur with “free” brokerages. And those costs are hard to measure.&lt;/p&gt;
+
+&lt;p&gt;- I did not use a price-weighting allocation yet. What I would do next is see how an exact copy of the DIA would perform.&lt;/p&gt;
+
+&lt;p&gt;- My Backtest period is not that long. Less than a year. It starts 8-31-20 because that is the date when the DJI components last changed and ends on 3-13-21. If I wanted to spend some money on a data source that provides constituent information on indices, I could make the backtest period longer. There are ways to get that info without paying, but I’m only an amateur at python.&lt;/p&gt;
+
+&lt;p&gt;- DJA is very limited, I’d rather do this test on the S&amp;amp;P500. Once again, need a clean data source to do that without a whole lot of headaches.&lt;/p&gt;
+
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+
+&lt;p&gt;The Results&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://imgur.com/WYlJjAt&quot;&gt;Backtest 1 (Benchmark) - 1 share of DIA&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Here we have the performance of just one share of DIA. I ran a full backtest on the benchmark because I wanted to see the effects of fees and cash drag on performance. Since we dealing with such low quantities a few dollars from either of those would have a meaningful effect. So the number to beat is 12.5%.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://imgur.com/aOl8qQ5&quot;&gt;Backtest 2 - 100 shares of DIA&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;For the first backtest I just want to simply see what adding some scale to the portfolio would do. So instead of 1 share of DIA, we have 100. Sure enough, we got more than a whole percentage point in return. Nothing too surprising. The new number to beat: 13.83%.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://imgur.com/syP1yos&quot;&gt;Backtest 3 - 1 share of each DJI constituent&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Now we created a portfolio with simply 1 share of every DJI constituent. Its return is very close to the return from Backtest 1 which was 12.5%. I suspect that if you did this strategy with a zero-commission account you might actually beat the 1-share DIA strategy. By how much, hard to say. However, still would be a losing strategy when compared to 100-shares DIA.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://imgur.com/h2teIea&quot;&gt;Backtest 4 - 10 shares of each DJI constituent&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Same idea with Backtest 2. I want to see how adding a little scale would change things. Sure enough, performs very closely to Backtest 2 – 100 shares of DIA strategy. Doesn’t beat it, but I suspect it might in a zero-fee environment by just a small amount. Of course, this is also the strategy that requires the most capital to implement just to buy all the pieces. So, it wouldn’t be the most practical strategy for most people.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://imgur.com/lVxwWnp&quot;&gt;Backtest 5 - 1000 shares of DIA&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Since Backtest 2 performed the best, I wanted to see the effect of even adding more scale, this time with 1000 shares. No doubt we have some diminishing returns. We were able to eke out just 1 basis point for an extra 300k of capital.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Conclusions:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Based on what I’m seeing, there doesn’t seem to much of a case for the Mini-Index Fund strategy. You’re still better off with just the proper ETF. Not ready to close the book on this just yet. Given time, I would like to test certain conditions that might have the Mini-Index Fund Strategy win at the end.&lt;/p&gt;
+&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[23歲，我已經是個單親爸爸了。]]></title><link>https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4judp/23_years_old_and_im_already_a_single_father/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4judp/23_years_old_and_im_already_a_single_father/</guid><pubDate>Sun, 14 Mar 2021 04:41:57 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[我今天也收到了富達公司寄來的自閉症宣傳信]]></title><link>https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4isv0/i_also_got_my_autism_awareness_letter_from/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4isv0/i_also_got_my_autism_awareness_letter_from/</guid><pubDate>Sun, 14 Mar 2021 04:41:57 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[我也收養了一隻大猩猩]]></title><link>https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4jl9a/i_too_adopted_a_gorilla/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4jl9a/i_too_adopted_a_gorilla/</guid><pubDate>Sun, 14 Mar 2021 04:41:57 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[我不過是一隻年輕的猩猩，有未實現的gme收益，但猩猩照顧猩猩，跟Popi們打個招呼吧。]]></title><link>https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4h928/i_am_but_a_young_ape_with_unrealised_gme_gains/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4h928/i_am_but_a_young_ape_with_unrealised_gme_gains/</guid><pubDate>Sun, 14 Mar 2021 03:26:19 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[我看我們現在要收養大猩猩了。好吧，我下來。]]></title><link>https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4gmve/i_see_were_adopting_gorillas_now_well_im_down/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4gmve/i_see_were_adopting_gorillas_now_well_im_down/</guid><pubDate>Sun, 14 Mar 2021 02:43:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[只是幫助我的猿族同胞！]]></title><link>https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4h5jd/just_helping_out_my_fellow_apes/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4h5jd/just_helping_out_my_fellow_apes/</guid><pubDate>Sun, 14 Mar 2021 02:43:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[傳播愛#APESTRONG]]></title><link>https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4f3yc/spread_the_love_apestrong/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4f3yc/spread_the_love_apestrong/</guid><pubDate>Sun, 14 Mar 2021 02:43:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[通過一個家庭]]></title><link>https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4go6s/adopted_a_family/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4go6s/adopted_a_family/</guid><pubDate>Sun, 14 Mar 2021 02:08:34 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[受其他次元的啓發，我收養了一隻大猩猩。]]></title><link>https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4f0oo/inspired_by_the_rest_of_the_subreddit_i_adopted_a/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4f0oo/inspired_by_the_rest_of_the_subreddit_i_adopted_a/</guid><pubDate>Sun, 14 Mar 2021 02:08:34 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Dian Fossey大猩猩基金主任給WSB的致辭!]]></title><link>https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4i2ib/a_message_to_wsb_from_the_director_of_the_dian/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4i2ib/a_message_to_wsb_from_the_director_of_the_dian/</guid><pubDate>Sun, 14 Mar 2021 01:22:10 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[紙質股票如何兌現？]]></title><description><![CDATA[我剛纔在翻我爺爺奶奶的書桌，發現了一張股票
+他們在1988年爲Meredith公司買了6722股。我怎麼把它兌現？
+過了這麼久，它還值錢嗎？]]></description><link>https://stocks.buzzing.cc/reddit/r/stocks/comments/m4inen/how_do_i_cash_in_a_paper_stock_certificate/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/stocks/comments/m4inen/how_do_i_cash_in_a_paper_stock_certificate/</guid><pubDate>Sun, 14 Mar 2021 01:22:10 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;I&amp;#39;m just now going through my grandparent&amp;#39;s desk and I found a stock certificate they bought in 1988 for Meredith Corp for 6,722 shares. How do I cash this in? After all this time is it even worth anything?&lt;/p&gt;
+&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[我看到你的小猩猩，就再養你一隻。]]></title><link>https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4edt8/i_see_your_baby_orangutan_and_raise_you_another/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4edt8/i_see_your_baby_orangutan_and_raise_you_another/</guid><pubDate>Sun, 14 Mar 2021 01:22:10 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[受現在很多關於收養大猩猩的帖子的啓發，我也收養了一隻大猩猩。認識一下Ishimwe!]]></title><link>https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4fytl/inspired_by_the_many_posts_now_on_gorilla/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4fytl/inspired_by_the_many_posts_now_on_gorilla/</guid><pubDate>Sun, 14 Mar 2021 01:22:10 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[從字面上看，不能去山雀了！#ApesAdoptingApes]]></title><link>https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4gw2m/literally_cant_go_tits_up_apesadoptingapes/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4gw2m/literally_cant_go_tits_up_apesadoptingapes/</guid><pubDate>Sun, 14 Mar 2021 01:22:10 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[做多商品，做空債券。防通脹，以及美國債券市場的紙牌屋。]]></title><description><![CDATA[嘿，大家好。
+
+所以，基本上我認爲，我們很有可能處於一個邊緣的邊緣
+經濟災難。我一直在談論債券市場，並研究到了
+那裏發生了什麼事，很明顯，FED已經被束縛住了手腳。
+而我們唯一的出路是：1）......。)]]></description><link>https://stocks.buzzing.cc/reddit/r/investing/comments/m4ghin/long_commodities_short_bonds_protection_against/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/investing/comments/m4ghin/long_commodities_short_bonds_protection_against/</guid><pubDate>Sun, 14 Mar 2021 01:22:10 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Hey everyone,&lt;/p&gt;
+
+&lt;p&gt;So basically I think there is a good probability that we are at the edge of an economic disaster. I have been talking about the bond market, and looking into what is going on there and it is clear that the FED has their hands tied on this and our only path forwards are 1) hyperinflation or 2) failure in the bond market due to rising interest rates.&lt;/p&gt;
+
+&lt;p&gt;In 2019, the world economy was running hot AF. In just the span of time from 2018-2019 the us median income rose 2%, poverty dropped 2%, and it all seemed very good.&lt;/p&gt;
+
+&lt;p&gt;The FED saw that the economy was getting hot, and that their quantitative easing (QE) policy might be becoming less effective. They have some bank tools that are used to combat inflation and interest rates. These tools are IOER, SLR%, and YCC.&lt;/p&gt;
+
+&lt;p&gt;IOER: Interest one excessive reserves. This is perhaps the most important tool because feds can manually change the interest rate on the M1 money stock. This is important because from this first money stock, every-time one passes hands there is an interest rate associated with it. So Interest rate on IOER affects the M1 money stock, M2 money stock, all banks, and almost all of the credit that we try to get, it also affects SLR%.&lt;/p&gt;
+
+&lt;p&gt;SLR%: Supplementary leverage ratio %. This is basically how much loan loss reserves a banks and companies need to always keep on hand in order to meet the needs of their members. For example, the US fed can put a cap at 10% SLR% and that means that the bank can leverage 90% of its money out, while only keeping 10% on hand. This is influenced by IOER and this SLR% is the main reason we cannot raise interest rates using IOER.&lt;/p&gt;
+
+&lt;p&gt;In 2019 we tried raising IOER, which increased SLR. When we did that we moved the underbelly of a beast so massive we had no idea how big it could be. When we raised IOER many banks and companies have taken out so much debt that they literally COULD NOT STAY LIQUID with increases in interest rates.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://youtu.be/URvok29rf-w&quot;&gt;https://youtu.be/URvok29rf-w&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Not only did this raise in interest rates lead to a huge liquidity disaster, it also led to liquidity disasters IN OTHER COUNTRIES. That is really really really worrisome. We raise interest in the IOER and all the suddenly Turkey also is having a major fucking liquidity issue. I don&amp;#39;t know each country but I do know that our 2019 actions were affecting Turkey and other countries.&lt;/p&gt;
+
+&lt;p&gt;So what did we do in response the the 2019 liquidity disasters? WE LOWERED INTEREST RATES AND PRINTED MORE MONEY. WE KEPT THE ZOMBIE GOING.&lt;/p&gt;
+
+&lt;p&gt;then the pandemic hit...&lt;/p&gt;
+
+&lt;p&gt;The pandemic hit and the FED already knew we were at a knives edge with the bond market. So their plan, although they say it was to help us, was to pump up the zombie economy with a huge monumental stimulus. Then we got two more after.&lt;/p&gt;
+
+&lt;p&gt;I wanted this stimulus, we all wanted this stimulus, but by pumping the stimulus in the economy and pumping up these institutions that can&amp;#39;t stay liquid if they had high interest rates has kind of put off the inevitable. A huge falling out of people who have too much debt.&lt;/p&gt;
+
+&lt;p&gt;So here we are in 2021. Government debt has not improved (it has got worse), credit ratings on many zombie companies that aren&amp;#39;t turning a profit are going to get worse and worse credit ratings = high standards of SLR% to stay liquid. This is going to make it even MORE difficult for these companies to deal with high interest rates.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;WHAT DOES THIS FIRST PART MEAN?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We have tools to deal with inflation, the most important being raised interest rates using (IOER) which influences SLR% and capital requirements of institutions. However, we have so much debt, and so much of this debt belongs to companies that don&amp;#39;t turn a significant profit. So we can&amp;#39;t raise interest rates if we don&amp;#39;t want a flat out crash in the bond market and wave of bankruptcies of major corporations and possibly financial institutions.&lt;/p&gt;
+
+&lt;p&gt;so if controlling for inflation by raising IOER would lead to a liquidity crisis in the bond market, how do we control for and prevent hyper inflation?&lt;/p&gt;
+
+&lt;p&gt;People have been talking about Yield Curve Control (YCC) as it is a tool to control for inflation. However it is not. YCC works by the FED going into the economy and buying up as many 10y and 30yr bonds as they can (this puts more money in economy), then selling a bunch of their short term expiring bonds. This buying on the long end and selling on the short end would help keep interest rates low for companies to stay liquid, BUT LOW INTEREST RATES LEADS US TO MORE INFLATION, so this plan will not work for very long.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;THE FED IS BETWEEN A ROCK AND A HARD PLACE&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;increase IOER to control inflation&lt;/strong&gt; = major liquidity issue and a fallout of our bond market&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;do YCC to avoid fall out of bond market&lt;/strong&gt; = more inflation!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;print more money&lt;/strong&gt; i&lt;strong&gt;nject it into the economy&lt;/strong&gt; = buy more time but put off inevitable.&lt;/p&gt;
+
+&lt;p&gt;I have been thinking about this and I don&amp;#39;t see that they have a way out. I have read into it and also heard people talk about this long before I got here. Below I leave some links so you can hear about this from someone else besides me.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://youtu.be/CCmdmOr06pY&quot;&gt;https://youtu.be/CCmdmOr06pY&lt;/a&gt; (CNBC on bond market)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/user/TheMoneyGPS&quot;&gt;https://www.youtube.com/user/TheMoneyGPS&lt;/a&gt; (another person who actually looks at numbers and data)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://youtu.be/28VXEocPnw4&quot;&gt;https://youtu.be/28VXEocPnw4&lt;/a&gt; (Peter Schiff has been saying this for a long time)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://youtu.be/Y1OkOtQND8w&quot;&gt;https://youtu.be/Y1OkOtQND8w&lt;/a&gt; (former banker sees same pending disaster)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Commodities&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I don&amp;#39;t want to talk about the inflation we are seeing in commodities because we have talked about steel a shit ton here and all of us know that inflationary signs are all over the economy. CPI will literally be the last indicator that inflation is here SO PLEASE INGORE THE FED WHEN THEY SAY CPI IS LOW.&lt;/p&gt;
+
+&lt;p&gt;We see inflationary pressure all over the market. Especially in commodities, producer prices, import costs, housing prices, etc. The FED is only saving face with CPI cause they know controlling inflation means crashing the bond market.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;My Plan&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Exposed myself to commodities&lt;/strong&gt;: I have invested in a handful of commodity tickers $RFP $MT $CLF $LPX $CTT $PCH $SXC, $ADM because even if we have the catalysts of a crazy economic recovery we also have inflation. So no matter what these stocks do, they HAVE to go up. I think in 2021 any commodity stock that can produce cash is a good one to have.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Expose myself to raising interest rates&lt;/strong&gt;: To ensure that I do not end up being a bag holder for the irresponsible lending and money printing that our government has engaged in for the last decade i am buying puts against the bond market. I have bought puts against $TLT $VGSH $HYG $VMBS $VGIT. I will keep buying them too.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;interest rates stay low = more inflation = commodity stocks go up&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;raise interest to control inflation = bond yields go up, prices of bonds go down. potential fallout of companies and institutions that can&amp;#39;t meet SLR%&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I took out positions on Monday and its like i touched a beast that just woke up. It should not be possible to be up $1500 in one day. the VGSH puts for october that I got for 10 dollars are now worth like 300.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://ibb.co/DCJR0Vc&quot;&gt;https://ibb.co/DCJR0Vc&lt;/a&gt; &lt;/p&gt;
+
+&lt;p&gt;TLDR; If you want to protect yourself from inflation, buy commodities. If you want to protect yourself from the fucking house of cards that is the bond market, buy puts on bond ETF&amp;#39;s against the bond market. This strategy might be VERY successful this year. Most of the puts i am buying are for the late fall or early next year.&lt;/p&gt;
+
+&lt;p&gt;If this country could handle higher interest rates I think we would be okay. But the 2019 disaster did not spur confidence that we we were in a position then, and now the house of cards has only expanded and our money printing has led to enormous amounts of speculation that this world has never seen. Cryptos, SPACs, NFT&amp;#39;s, High valuations, Cathie Wood, Chamath, etc. etc. To make this wore we are already starting to see inflation pressures hit producers and commodities. EU and AU are doing MORE MONEY PRINTING and QE. Money hasn&amp;#39;t even started moving through the economy too. We have not even opened up.&lt;/p&gt;
+
+&lt;p&gt;I sincerely wish I could believe this administration that we are in for a great economic recovery. They are completely ignoring the huge fucking problem right under their nose.&lt;/p&gt;
+
+&lt;p&gt;This guy seems to agree with me: &lt;a href=&quot;https://youtu.be/__eVeN8wmfQ&quot;&gt;https://youtu.be/__eVeN8wmfQ&lt;/a&gt; &lt;/p&gt;
+
+&lt;p&gt;My positions:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://ibb.co/PTsF3Qq&quot;&gt;https://ibb.co/PTsF3Qq&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://ibb.co/n3Vh1XD&quot;&gt;https://ibb.co/n3Vh1XD&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://ibb.co/JsmDFv8&quot;&gt;https://ibb.co/JsmDFv8&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[一年前的今天，比特幣的價格在6100美元左右
+
+現在超過61,000美元]]></title><link>https://stocks.buzzing.cc/tweet/1370851889277964293</link><guid isPermaLink="false">https://stocks.buzzing.cc/tweet/1370851889277964293</guid><pubDate>Sat, 13 Mar 2021 23:41:51 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[比特幣今天超越蘋果300%的表現。]]></title><link>https://stocks.buzzing.cc/tweet/1370837953719717891</link><guid isPermaLink="false">https://stocks.buzzing.cc/tweet/1370837953719717891</guid><pubDate>Sat, 13 Mar 2021 23:41:51 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[從羅賓漢換到。]]></title><description><![CDATA[從羅賓漢轉到其他平臺的朋友們，怎麼
+很難是它？我想羅賓漢的收費大概是100塊錢，而且需要一個星期。要
+實話實說，我一直想換，但還沒到處理麻煩的地步。]]></description><link>https://stocks.buzzing.cc/reddit/r/stocks/comments/m47r51/switching_from_robin_hood/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/stocks/comments/m47r51/switching_from_robin_hood/</guid><pubDate>Sat, 13 Mar 2021 22:08:59 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Those of you who have switched over from Robin Hood to another platform, how hard was it? I think Robin Hood charges like 100 bucks and it takes a week. To be truthful I have wanted to switch but not enough to deal with the hassle.&lt;/p&gt;
+&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[刺激政策檢查將使下週市場特別是GME上漲]]></title><description><![CDATA[根據CNBC的這篇文章
+[https://www.cnbc.com/2020/05/21/many-americans-used-part-of-their-coronavirus-stimulus-check-to-trade-stocks.html]
+刺激經濟的支票有很大一部分進入了市場。本文來自
+可能指的是第一個刺激。
+
+我想這應該是更大的新聞，與...]]></description><link>https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m3rmqd/stimulus_checks_will_bring_the_market_up_next/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m3rmqd/stimulus_checks_will_bring_the_market_up_next/</guid><pubDate>Sat, 13 Mar 2021 21:55:10 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;As per &lt;a href=&quot;https://www.cnbc.com/2020/05/21/many-americans-used-part-of-their-coronavirus-stimulus-check-to-trade-stocks.html&quot;&gt;this CNBC article &lt;/a&gt; a significant part of stimulus checks went into the market.  The article is from May referring to the first stimulus.  &lt;/p&gt;
+
+&lt;p&gt;I think this should be bigger news with most Americans receiving $1,400 next week.  Some people mention it is priced in but an inflow of some significant part of  the stimulus checks ($400 billion) flowing into the market can&amp;#39;t be priced in.  It isn&amp;#39;t news - it is actual money hitting the market.&lt;/p&gt;
+
+&lt;p&gt;&amp;quot;Trading stocks was among the most common uses for the government stimulus checks&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;And with WSB now at close to 10 million subscribers from two(?) million last year - there are a lot more people watching this subreddit which primarily discusses GME.  &lt;/p&gt;
+
+&lt;p&gt;So I&amp;#39;m long GME!&lt;/p&gt;
+&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[不允許在TD上賣空$GME和$RKT。]]></title><description><![CDATA[https://preview.redd.it/xctwvijejtm61.png?width=960&format=png&auto=webp&s=bc3f82e8786d22fc44d00b6f9114ed282f2b44a1
+
+鏈接在TD上的人誰不相信我，因爲我很美
+[https://www.tdameritrade.com/td-ameritrade-trading-restrictions-stocks.page]
+
+請看我關於GME和其他股票的帖子，從...]]></description><link>https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m496ec/gme_and_rkt_short_selling_not_allowed_on_td/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m496ec/gme_and_rkt_short_selling_not_allowed_on_td/</guid><pubDate>Sat, 13 Mar 2021 21:35:16 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://preview.redd.it/xctwvijejtm61.png?width=960&amp;amp;format=png&amp;amp;auto=webp&amp;amp;s=bc3f82e8786d22fc44d00b6f9114ed282f2b44a1&quot;&gt;https://preview.redd.it/xctwvijejtm61.png?width=960&amp;amp;format=png&amp;amp;auto=webp&amp;amp;s=bc3f82e8786d22fc44d00b6f9114ed282f2b44a1&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.tdameritrade.com/td-ameritrade-trading-restrictions-stocks.page&quot;&gt;LINK ON TD FOR PEOPLE WHO DONT BELIEVE ME BECAUSE IM BEAUTIFUL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.reddit.com/r/wallstreetbets/comments/m35u61/memeageddon_judgement_day_witching_day_march_19th/&quot;&gt;See my post on GME and other stocks from yesterday which was very successfully buried and received little attention.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Brokerages are starting to realize shorts are in BIG TROUBLE in $GME and $RKT.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;So far $RKT shorts have been in COMPLETE CONTROL of this stock and it&amp;#39;s price since they IPOd at $18 in 2020.&lt;/p&gt;
+
+&lt;p&gt;In Feb 21 RKT BLASTED away earnings expectations and revenue with growth of 161%! Crazy amazing unexpected growth and profitability. The share price went from $19.90 to $21.85... LOL&lt;/p&gt;
+
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://preview.redd.it/bwx447sfjtm61.png?width=594&amp;amp;format=png&amp;amp;auto=webp&amp;amp;s=e718f52e50d2819d41bc226f160d0f2d00562b8c&quot;&gt;https://preview.redd.it/bwx447sfjtm61.png?width=594&amp;amp;format=png&amp;amp;auto=webp&amp;amp;s=e718f52e50d2819d41bc226f160d0f2d00562b8c&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Since then&lt;/p&gt;
+
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://preview.redd.it/fbroivvgjtm61.png?width=2093&amp;amp;format=png&amp;amp;auto=webp&amp;amp;s=459319c3ad0b896088e1b73b0e1520543769a979&quot;&gt;https://preview.redd.it/fbroivvgjtm61.png?width=2093&amp;amp;format=png&amp;amp;auto=webp&amp;amp;s=459319c3ad0b896088e1b73b0e1520543769a979&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;On March 1st and 2nd the shorts got side-lined by a bunch of WSB interest and the price spiked +71% to $43.&lt;/p&gt;
+
+&lt;p&gt;RKT CEO says their share price at $43 is OK but they are still not being fairly valued to peers. (youtube links not allowed)&lt;/p&gt;
+
+&lt;p&gt;So what do the shorts do? They DOUBLE DOWN as they always do!&lt;/p&gt;
+
+&lt;p&gt;They unload millions of new shorts to attack the price:&lt;/p&gt;
+
+&lt;p&gt;On March 4th they have dropped the price to $26.80.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;This chart shows the available short shares to borrow and the fee. On March 4th there are ONLY 100,000 shares available and a HUGE BORROWING FEE OF 59%&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://preview.redd.it/rgtiqziljtm61.png?width=1243&amp;amp;format=png&amp;amp;auto=webp&amp;amp;s=3979f04d5b95acb8b0a097642ff84bbfe185e553&quot;&gt;https://preview.redd.it/rgtiqziljtm61.png?width=1243&amp;amp;format=png&amp;amp;auto=webp&amp;amp;s=3979f04d5b95acb8b0a097642ff84bbfe185e553&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Data from here: &lt;a href=&quot;https://iborrowdesk.com/report/RKT&quot;&gt;https://iborrowdesk.com/report/RKT&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In the meantime paper-handed retail investors HAVE SOLD to this very obvious GME tactic once again and there are now more shorts available! These guys are so good at doubling down.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.marketwatch.com/investing/stock/rkt&quot;&gt;Market Watch calls Short Interest at 40% on Feb 26th. Since the price went up and they just shorted millions more shares you can bet your sweet bananas short interest is probably higher.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;From a technical analysis POV the chart has 3 trailing support lines. In other words the price is very unlikely to dip below $23.50. Your downside is very minimal.&lt;/p&gt;
+
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://preview.redd.it/ry9hxdfmjtm61.png?width=2118&amp;amp;format=png&amp;amp;auto=webp&amp;amp;s=2dff7ec2116f2f0de0bfdd5be0a7ae90f6318967&quot;&gt;https://preview.redd.it/ry9hxdfmjtm61.png?width=2118&amp;amp;format=png&amp;amp;auto=webp&amp;amp;s=2dff7ec2116f2f0de0bfdd5be0a7ae90f6318967&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The morning of March 12th RKT was UP in pre-market. When the market opened there was huge volume and price drove down, killed the momentum and people thought they lost.&lt;/p&gt;
+
+&lt;p&gt;During that same time MILLIONS of shorts were fired:&lt;/p&gt;
+
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://preview.redd.it/q8yr8b5njtm61.png?width=387&amp;amp;format=png&amp;amp;auto=webp&amp;amp;s=d55b9cbcddae79869becb78017a1832a6b4dfeda&quot;&gt;https://preview.redd.it/q8yr8b5njtm61.png?width=387&amp;amp;format=png&amp;amp;auto=webp&amp;amp;s=d55b9cbcddae79869becb78017a1832a6b4dfeda&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Shares available went from 5.6M to 1.9M. Then retail SOLD.... You weak apes.&lt;/p&gt;
+
+&lt;p&gt;The OPEN INTEREST for MARCH 19th OUT THE MONEY IS INSANE.&lt;/p&gt;
+
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://preview.redd.it/6pu6cv0ojtm61.png?width=910&amp;amp;format=png&amp;amp;auto=webp&amp;amp;s=a945e90e1e0dfeeef8d416156dca3c3635a26c3e&quot;&gt;https://preview.redd.it/6pu6cv0ojtm61.png?width=910&amp;amp;format=png&amp;amp;auto=webp&amp;amp;s=a945e90e1e0dfeeef8d416156dca3c3635a26c3e&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Check out the strike of $30 with 48,889 contracts. On a float of only 100,000,000 (a little bigger than gme) that represents 4,888,900 shares just there (usually MMs will buy 50% or so as it approaches ITM).&lt;/p&gt;
+
+&lt;p&gt;In other words if this gets to $29 it will just keep going up until the highest strike - So above $65 likely.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;That&amp;#39;s about a 300% return from current price.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Also remember we have the DTCC new rule coming soon, we don&amp;#39;t know the date yet but that&amp;#39;s making the shorts piss their pants as they would have less liquidity to fight with. They really want to shake out all the retail money at the cheapest price THIS WEEK.&lt;/p&gt;
+
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://preview.redd.it/qelq19cpjtm61.png?width=816&amp;amp;format=png&amp;amp;auto=webp&amp;amp;s=1177d9ce4e4baf2b65056ad52ef14f108b1c7da4&quot;&gt;https://preview.redd.it/qelq19cpjtm61.png?width=816&amp;amp;format=png&amp;amp;auto=webp&amp;amp;s=1177d9ce4e4baf2b65056ad52ef14f108b1c7da4&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;TLDR:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;RKT is one of the most manipulated prices since IPO. Despite amazing performance, surprise earnings, dividends and buyback announcements the stock has been held under $24.&lt;/p&gt;
+
+&lt;p&gt;The stock is starting to be put on short-selling restricted lists which means shorts are over-risked and brokerages know this.&lt;/p&gt;
+
+&lt;p&gt;RKT has a relatively small float with high short interest. It won&amp;#39;t take a lot to light the match. The options interest for next week also allows for a big gamma squeeze if the price hits $29 for a sustained period. We&amp;#39;re at $25... It&amp;#39;s not a lot to ask for.&lt;/p&gt;
+
+&lt;p&gt;Disclaimer: This is no financial advice.&lt;/p&gt;
+&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[GME - option flow by the number - JUST HODL SMOOTH BRAINS]]></title><description><![CDATA[$GME - 期權流的數字昨天市場收盤後，我感覺炒了起來
+- 並不是因爲GME（-1.5萬的tsla選項汪）。所以我拔掉了插頭，並且
+和我的家人一起出去玩。我是一隻老猿。我是一個有老婆猿，有孩子猿的猿人。
+我是一個擁有一些生意，和房產的猿人。但是...]]></description><link>https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m47vi8/gme_option_flow_by_the_number_just_hodl_smooth/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m47vi8/gme_option_flow_by_the_number_just_hodl_smooth/</guid><pubDate>Sat, 13 Mar 2021 21:35:16 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;&lt;strong&gt;$GME - Option flow by the numbers&lt;/strong&gt;Aftermarket close yesterday I was feeling fried - not so much because of GME (-15k on tsla options woof). So I unplugged, and hung out with my family. I’m an Old  Ape. I’m an ape with wife ape, a child ape. I’m an ape that owns a few businesses, and properties. But most importantly - I’m an ape that is completely over the looseness of regulations in securities exchanges, and this ape isn’t fucking selling.Feeling recharged this morning, with a couple cups of coffee - I decided to jump into Option order flow from Cheddar Flow.&lt;/p&gt;
+
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+
+&lt;p&gt;I used the following parameters:3/1 to 3/15 OrdersRemoved everything that has expired and decided to do what gives me comfort as a wrinkle brain ape and just look at the concrete data.&lt;/p&gt;
+
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+
+&lt;p&gt;The Excel sheet I provided shows many things, is it accurate? No - probably not. This ape may have some wrinkles, but is too smooth calculate IV.The bulleted point of the sheet is this (NOT BANANA ADVICE, JUST WRINKLE BRAIN APE LOOKING FOR ANSWERS)&lt;/p&gt;
+
+&lt;p&gt;There are: 111,204 Volume picked up in options that have yet to expire - between calls &amp;amp; putsThere is: 538,434 Current option interest on the strikes in this sheet The Average strike price divided by the total number of contracts purchased is 18,665 (this accounts for puts as well as calls)&lt;/p&gt;
+
+&lt;p&gt;.Because ape only has some wrinkles, not all the wrinkles I can’t account for IV - but I can account for a banana to banana value at volatility less cost. So ape decided to account for that, to give himself a bigger view of the overall picture.&lt;/p&gt;
+
+&lt;p&gt;There was: $24million in buys in deep ITM and slightly OOTM options picked up on 3/4 (ape things hedges for hedges (double fuck you scumbag funds if you’re reading this btw)&lt;/p&gt;
+
+&lt;p&gt;On a banana for banana basis ape determined total value of all options right now is 94,854,461 bananas.&lt;/p&gt;
+
+&lt;p&gt;So wrinkle brain ape took out the value of the puts, and hedges - and determined that the actual value is 140,017,514 Bananas in value. That’s a lot of bananas. Like a lot.  &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;(( EDIT: $99,965,839 spent on these options. // Shorts/Hedge removed is 116,463,553 ))&lt;/strong&gt;  &lt;/p&gt;
+
+&lt;p&gt;With ape baseless speculation - I value The shorts/hedge (fuck you again btw) as -45,163,053 bananas. That’s quite a banana deficit before you account for IV and Theta.  &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;(( EDIT: -16,497,714 with adjustments to formula  still not sure how to account for IV / Vega / Theta in all of this))&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+
+&lt;p&gt;Other information I like:65.2 million outstanding sharesshort float is 54.16 million cccording to whale wisdom q4 filings there are 74.474 million shares held (LOL what? More shares than available - keep this in mind),short interest according to Morningstar is 52% . (&lt;strong&gt;EDIT: updated to 26.22%)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;There are currently 8.2 million more shares than outstanding (before apes and dfv of course).Short total should be around 28million shares.&lt;strong&gt;Meaning 36.437 million shares need to be bought in order to cover.&lt;/strong&gt;  &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;(( EDIT: -22,474,752 total shares to be covered after adjusting SI -))&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;TLDR:&lt;/strong&gt; Just fucking holding your shares, they bring bananas.Stop bitching about gamma, stop bitching about options, stop bitching about the day to day - wrinkle brain ape says this. Shit is going to hit the fan. Be apart of history apes.&lt;/p&gt;
+
+&lt;p&gt;Go long, and stay strong&lt;/p&gt;
+
+&lt;p&gt;**Positions:**Was holding 365 shares, told wife i&amp;#39;d withdraw more money this weekend because she&amp;#39;s sketched out as fuck about all of this (bigly bananas up for the year), down to 265 shares now.  with $30k in bananas to continue to add&lt;/p&gt;
+
+&lt;p&gt;Excel Sheet attached.&lt;a href=&quot;https://drive.google.com/file/d/1xV1iz8mq-srWhjQCZmZQvowXm8L3SEgk/view?usp=sharing&quot;&gt;https://drive.google.com/file/d/1xV1iz8mq-srWhjQCZmZQvowXm8L3SEgk/view?usp=sharing&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;If there are errors i&amp;#39;ll adjust later. need more coffee.&lt;/p&gt;
+
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;EDIT 1:&lt;/strong&gt;there are errors, please don&amp;#39;t down vote people for pointing them out. We should want accurate information, not just information that makes us feel good.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/u/Verb0182&quot;&gt;u/Verb0182&lt;/a&gt; and &lt;a href=&quot;/u/auspiciousham&quot;&gt;u/auspiciousham&lt;/a&gt; specifically pointing our correct inaccuracies.Adjusting and will re-upload my boomer excel sheet.  &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;EDIT 2:&lt;/strong&gt; After correcting formula in P column (my bad, good eye auspiciousham) and adjusting the short interest to 26.22 (good eyes verb)  updated totals are:  &lt;/p&gt;
+
+&lt;p&gt;22,474,752 million shares to cover  &lt;/p&gt;
+
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[我看到你的大猩猩，給你一個小猩猩。]]></title><link>https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4cahg/i_see_your_gorillaz_and_give_you_a_baby_orangutan/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4cahg/i_see_your_gorillaz_and_give_you_a_baby_orangutan/</guid><pubDate>Sat, 13 Mar 2021 21:35:16 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[到了EOY，我要麼擁有GameStop，要麼住在橋下。]]></title><link>https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m48loa/i_will_either_own_gamestop_or_be_living_under_a/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m48loa/i_will_either_own_gamestop_or_be_living_under_a/</guid><pubDate>Sat, 13 Mar 2021 21:35:16 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[1年賺了1400萬。週五終於達到1400萬美金! (2019年5月有12.5萬)]]></title><link>https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4bfal/made_14mm_in_1_year_finally_hit_14_million_friday/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4bfal/made_14mm_in_1_year_finally_hit_14_million_friday/</guid><pubDate>Sat, 13 Mar 2021 21:35:16 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Cricut疏遠客戶，在上市前搶奪現金。]]></title><description><![CDATA[Cricut，已申請1億美元的IPO。
+[https://www.nasdaq.com/articles/getting-crafty%3A-crafting-machine-maker-cricut-files-for-a-%24100-million-ipo-2021-02-16]。
+決定增加
+[https://www.reddit.com/r/cricut/comments/m3r73q/design_space_changes_now_more_useless_unless_i/]
+a…]]></description><link>https://stocks.buzzing.cc/reddit/r/investing/comments/m4buah/cricut_alienates_customers_in_preipo_cash_grab/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/investing/comments/m4buah/cricut_alienates_customers_in_preipo_cash_grab/</guid><pubDate>Sat, 13 Mar 2021 21:21:20 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Cricut, &lt;a href=&quot;https://www.nasdaq.com/articles/getting-crafty%3A-crafting-machine-maker-cricut-files-for-a-%24100-million-ipo-2021-02-16&quot;&gt;which has filed for a $100 Million IPO&lt;/a&gt;, have decided to &lt;a href=&quot;https://www.reddit.com/r/cricut/comments/m3r73q/design_space_changes_now_more_useless_unless_i/&quot;&gt;add&lt;/a&gt; a &lt;a href=&quot;https://inspiration.cricut.com/new-features-and-updates-coming-to-design-space/&quot;&gt;subscription&lt;/a&gt; as a requirement to access features they had previously assured customers &lt;a href=&quot;https://www.reddit.com/r/cricut/comments/m40lhg/creative_freedom_should_be_free/&quot;&gt;they could do for free&lt;/a&gt;.&lt;br/&gt;
+They are unsurprisingly alienating their supporters, who are expressing frustration all over &lt;a href=&quot;/r/cricut&quot;&gt;r/cricut&lt;/a&gt;, in &lt;a href=&quot;https://www.change.org/p/cricut-cricut-design-space-update-petition?redirect=false&quot;&gt;two&lt;/a&gt; &lt;a href=&quot;https://www.change.org/p/cricut-cricut-to-retract-the-new-policy-of-paying-to-use-the-machine-you-have-purchased?redirect=false&quot;&gt;different&lt;/a&gt; &lt;a href=&quot;https://change.org&quot;&gt;change.org&lt;/a&gt; petitions, in the &lt;a href=&quot;https://www.michaels.com/cricut-maker-champagne/D233282S.html#&quot;&gt;reviews&lt;/a&gt; &lt;a href=&quot;https://www.amazon.com/gp/customer-reviews/R2R6IVNHMH1K69/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&amp;amp;ASIN=B01GSOMVRG&quot;&gt;on&lt;/a&gt; many &lt;a href=&quot;https://www.google.com/maps/place/Cricut/@40.5537271,-111.9124191,15z/data=!4m7!3m6!1s0x0:0x30ef2fe6bcb4bc69!8m2!3d40.5537271!4d-111.9124191!9m1!1b1&quot;&gt;platforms&lt;/a&gt;, on &lt;a href=&quot;https://twitter.com/hashtag/boycottcricut&quot;&gt;twitter&lt;/a&gt;, in Facebook groups and instagram (though Cricut is deleting complaint posts with impunity), by &lt;a href=&quot;https://www.reddit.com/r/cricut/comments/m3tbo9/my_theory_on_the_greedy_design_space_change/gqqrxjl?utm_source=share&amp;amp;utm_medium=web2x&amp;amp;context=3&quot;&gt;sending emails to the company&lt;/a&gt;, and in conversations with others who are thinking about buying them.&lt;br/&gt;
+Be cautious about investing in this company when the IPO comes along.&lt;/p&gt;
+&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[我是如何瞭解金錢的時間價值和複利的--10歲時在公海上販毒--或者說，爲什麼我是一個價值投資者？]]></title><description><![CDATA[轉載自我早先在其他板塊的評論意見
+
+編輯：非常感謝給予獎勵/表彰的朋友們!
+
+貨幣時間價值（TVM）是所有金融的核心原則，它可以
+對你有利或不利。它適用於所有的事情：放棄一些錢。
+現在爲了更多的錢...]]></description><link>https://stocks.buzzing.cc/reddit/r/stocks/comments/m4boaq/how_i_learned_about_time_value_of_money_and/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/stocks/comments/m4boaq/how_i_learned_about_time_value_of_money_and/</guid><pubDate>Sat, 13 Mar 2021 21:21:20 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;&lt;em&gt;reprinted from an earlier commentt I made elsewhere on the boards&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;EDIT: Many thanks to those who gave awards/recogniton!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Time Value of Money (TVM)&lt;/strong&gt; is the central principle of all finance, and it can work for you or against you. It&amp;#39;s applicable to everything: Giving up some money now for more money later, or buying a dollar for sixty cents versus the other way around.&lt;/p&gt;
+
+&lt;p&gt;The Time Value of Money equation can be expressed as:&lt;/p&gt;
+
+&lt;p&gt;FV = PV x (1 + r)&lt;sup&gt;nt&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;Where FV is the future value of an asset. PV is the present value. r is the rate of return. n is the number of times compounded per term. t is the term (in years) compounded. e.g. if you are compounding monthly for 30 years then n = 12, t = 30, nt = 12 * 30 = 360.&lt;/p&gt;
+
+&lt;p&gt;When you&amp;#39;re a borrower, you&amp;#39;re paying the premium. When you&amp;#39;re a depositor and investor, you&amp;#39;re collecting the premium... provided that you are properly pricing assets and not buying into the inflated premiums speculators attach to stocks on the front end.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;#39;re old enough to remember, there was this game for the Apple ][ called &lt;em&gt;Taipan!&lt;/em&gt; that taught Time Value of Money and compound interest in a very interesting way:&lt;/p&gt;
+
+&lt;p&gt;The game involved being a trader on the China Sea. It was basically the predecessor to Dope Wars... you would fight pirates, collect their treasure, buy bigger ships, buy cannons, trade arms, silk, cargo and opium. Opium was like a day trading stock. It could skyrocket for no reason. And you could get rich, then you&amp;#39;d get mugged by robbers and lose all your cash.&lt;/p&gt;
+
+&lt;p&gt;You have this Elder Brother Wu who is basically a loan shark. He can loan you money but he&amp;#39;ll loan it to you at a usurious rate of interest... it compounds 10 percent &lt;em&gt;per turn.&lt;/em&gt; And if you don&amp;#39;t pay him off &lt;em&gt;he&amp;#39;ll send his bodyguards to cut your throat.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;BUT THERE&amp;#39;S A GLITCH...&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;If you repay Wu more money than you owe him, suddenly you have a negative balance... and it grows at the same rate of interest, but in your favor. He owes you 10 percent compounded per turn.&lt;/p&gt;
+
+&lt;p&gt;If you play this out for a while, your balance with him grows into the billions and trillions and hundreds of trillions of British pounds. Pretty soon, the risk of getting mugged over £3 million in opium seems worthless, because by this point in the game you&amp;#39;re making more than &lt;del&gt;ten&lt;/del&gt; 1000 times that just moving from port to port, causing Wu to incur &lt;a href=&quot;https://i.imgur.com/4VtO2BL.png&quot;&gt;humongous interest&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;That&lt;/strong&gt; is why you should always be, literally, on the right side of the Time Value of Money equation.&lt;/p&gt;
+&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[橋水聯合CIO普林斯談通脹與被動投資]]></title><description><![CDATA["隨着通脹上升，經濟好轉，債券收益率上升。
+他們是不讓它漲還是讓它漲？如果他們這樣做收益率曲線
+控制，他們是否會冒着美元的風險？"
+
+"普林斯--橋水公司的聯合首席投資官，該公司管理着1500億美元的資金。
+資產--說他還...]]></description><link>https://stocks.buzzing.cc/reddit/r/investing/comments/m4829g/bridgewater_cocio_prince_on_inflation_and_passive/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/investing/comments/m4829g/bridgewater_cocio_prince_on_inflation_and_passive/</guid><pubDate>Sat, 13 Mar 2021 20:51:04 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;“with inflation rising and the economy doing better and the bond yield going up, do they keep it from going up or do they let it go? If they do yield curve control, do they risk the dollar?”&lt;/p&gt;
+
+&lt;p&gt;“Prince — co-chief investment officer of Bridgewater, which manages $150bn in assets — said he was also troubled by the growth of index investing. With low rates leaving yield-hungry investors few alternatives to equities, he said, index funds were paying ever higher prices for stocks with lower future returns.&lt;/p&gt;
+
+&lt;p&gt;“It has the look of a Ponzi scheme,” he said, “because if you can sell it on to someone else that’s fine but what happens if you can’t.”&lt;/p&gt;
+
+&lt;p&gt;TLDR; QE and passive investing has created a bubble in equites and the Fed will have to decide whether to yield curve control or let inflation run wild&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://on.ft.com/3landPk&quot;&gt;Bridgewater’s Prince warns on risky assets after bond decline&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[Coupang Inc DD - 韓國的亞馬遜公司]]></title><description><![CDATA[---------------------------------------------------------------DISCLAIMER------------------------------------------------------------------
+
+這是我有史以來的第一次丈量，說到這裏，請大家好自爲之，並讓我知道
+如果有什麼問題，或者如果我沒有包括任何重要的東西。會...]]></description><link>https://stocks.buzzing.cc/reddit/r/stocks/comments/m4c50z/coupang_inc_dd_the_amazon_of_south_korea/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/stocks/comments/m4c50z/coupang_inc_dd_the_amazon_of_south_korea/</guid><pubDate>Sat, 13 Mar 2021 20:44:18 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;&lt;strong&gt;---------------------------------------------------------------DISCLAIMER------------------------------------------------------------------&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This is my first ever DD, with that being said please be nice, and let me know if anything is wrong and or if I didn&amp;#39;t include anything important. Would love some &lt;strong&gt;constructive&lt;/strong&gt; criticism, thanks. Also with that being said I don’t know anything about anything. I&amp;#39;m just some guy who read some stuff and compiled it all here. I can’t tell the future. I am NOT a financial advisor. I’m just an ape like all of you. PLEASE do your own research. Humans are known for being wrong and I’m no expectation. I’m bullish on this stock but it did JUST go public therefore there isn’t a ton of history for how the stock performs. THIS IS NOT FINANCIAL ADVICE.&lt;/p&gt;
+
+&lt;p&gt;With that said. I hope you enjoy and learn something from this.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Coupang Inc DD&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Ticker - CPNG&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Initial bullish info (for the apes who can&amp;#39;t stand to read more than 100 words)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Talked about and known as the “Amazon of South Korea”&lt;/li&gt;
+&lt;li&gt;Coupang has been the second largest e-commerce IPO since Alibaba&lt;/li&gt;
+&lt;li&gt;Revenue Loss decreasing year after year since 2018&lt;/li&gt;
+&lt;li&gt;IPO jumped more than 70%&lt;/li&gt;
+&lt;li&gt;Company was valued at $9B back in June 2020 and now is valued at around $90B with a market cap of 86B (at the time of writing)&lt;/li&gt;
+&lt;li&gt;CEO’s a Harvard grad of the dropout (just like Zuckerberg)&lt;/li&gt;
+&lt;li&gt;Coupang has the highest market share of Korea&amp;#39;s E-commerce business&lt;/li&gt;
+&lt;li&gt;Improved cash flow by almost a billion dollars in a year&lt;/li&gt;
+&lt;li&gt;Similar to Amazon in early years with no GAAP profitability but massive cash flow&lt;/li&gt;
+&lt;li&gt;Coupangs the most used online shopping platform in south Korea&lt;/li&gt;
+&lt;li&gt;Coupang has continuingly growing branches in Food delivery and grocery services&lt;/li&gt;
+&lt;li&gt;Coupang has same day and dawn delivery (place an order by midnight and get it by 7am)&lt;/li&gt;
+&lt;li&gt;Eco friendly packaging&lt;/li&gt;
+&lt;li&gt;Customer Base has grew by an approximate 14.8 million from 2019 to 2020 (up more than 25%)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Now for people who want wrinkles in their brain please continue on reading&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Quantitative:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Net Revenue for 2020: $12B up more than 90% from 2019&lt;/li&gt;
+&lt;li&gt;Customer base Grew approximately 14.8 Million from 2019 to 2020&lt;/li&gt;
+&lt;li&gt;Total net Revenues per active custom increased to approximately $256 in 2020 from $161 in 2019&lt;/li&gt;
+&lt;li&gt;Gross profit for 2020: $2B also up more than 90% from 2019&lt;/li&gt;
+&lt;li&gt;Operating loss for 2020: $500M down from $600M in 2019&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Revenue Loss decreasing year after year since 2018&lt;/p&gt;
+
+&lt;p&gt;2018: -1.5B&lt;/p&gt;
+
+&lt;p&gt;2019: -698M&lt;/p&gt;
+
+&lt;p&gt;2020: -474M&lt;/p&gt;
+
+&lt;p&gt;In November 2018 Softbank&amp;#39;s Vision Fund invested over $2B with a $9B valuation which has since been increased to $86B&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Use of Proceeds:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Net IPO of Class A common stock was $35.00 and jumped to $69.00 (nice) once it was available to trade. However the company has stated they will not be taking proceeds from the sale of shares and rather wants to increase their capitalization, financial flexibility, and create a public market for their stock.&lt;/li&gt;
+&lt;li&gt;Net Proceeds received from the offering are planned to be used for general corporate purposes including: working capital, operating expenses, and capital expenditures.&lt;/li&gt;
+&lt;li&gt;Coupang is currently not planning to pay dividends and rather invest in themselves.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I really like this because they know exactly what and where their assets are and implies they will be heavily re-investing into those assets in attempts to grow them. Amazon has and is using the same formula by not paying dividends, not focusing on revenue, but focusing on growing their brand recognition and customer base (their largest asset). Amazon&amp;#39;s TTM use of cash graph below which I predict will mirror Coupangs in the future. Again though, I don’t know anything.&lt;/p&gt;
+
+&lt;p&gt;📷&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Profitability&lt;/strong&gt; (on a GAAP basis) was not positive. However from a cash flow basis they generated over 300M from operations and continue to generate cash flow in order to boost their operations and re-invest in themselves and grow their customer base, which continues to be their strongest asset.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Opportunity:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Korea&amp;#39;s GDP “gross domestic product” (overall economic performance of a country, usually over a year) is over 1.6 Trillion and a GDP per capita (per person) of $31,847. This number continues to grow year after year as well as is evented form Korea&amp;#39;s 2010 GDP of 1.1 Trillion.&lt;/p&gt;
+
+&lt;p&gt;The total spent in retail, grocery, consumer foodservice and travel in Korea was $470B in 2019 and is expected to increase to $534B by 2024. (Coupang is in 3 of 4 of those sectors)&lt;/p&gt;
+
+&lt;p&gt;Total spent in E-commerce was $128B and is expected to grow to $206B by 2024. On a per buyer basis, e-commerce spending is expected to grow from 2,600 in 2019 to 4,300 in 2024.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Management:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Range of age for management team is 36-61 with an average of age of 46&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Bom Suk Kim -&lt;/strong&gt; Founder, current CEO and Chairman of the board of Coupang. Kim has a Harvard A.B degree in Government and is currently 42 making him the second youngest billionaire in South Korea. Kim founded Vintage Media Company (food industry exhibition and event planner) which he sold in 2009 before starting Coupang the following year.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Gaurav Anand -&lt;/strong&gt; Current CFO since Dec, 2020 and previously served as COO (Chief Operating Officer) from Jan, 2019 to Dec 2020. Anand has been with Coupang since 2017 and previously served as Vice President of Finance at Myntra (A fashion subsidiary of Flipkart (an online retailer which Softbank Vision Fund also invested into) and held various finance positions at Amazon from 2007 to 2014. Yeah. I know. Exciting right?&lt;/li&gt;
+&lt;li&gt;**Thuan Pham - (**awesome name btw) has been Chief Technology Officer since September 2020 and served the same position at UBER from April 2013 to May 2020. From 2004 to 2013 he also served as Vice President at VMWare Inc which is a software and technology company. Pham also has both bachelors and a masters degree in computer Science and electrical Engineering From Massachusetts Institute of Technology. (this guy basically is a computer)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Other members of management have some pretty impressive credentials as well. A number of them have worked in high level management positions with Amazon like Minette Bellinagan who served as Director or Global sourcing and private Brands for Amazon. Many of them also have history in the technology and e-commerce sector with a good deal of them having experience founding their own startups such as Kiro Kyung who is a highly skilled software engineer who started two tech startups before joining Coupang.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Qualitative:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Company Mission: To create a world where customers wonder: “How did I ever live without Coupang?”&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Same day and Dawn delivery&lt;/strong&gt; reducing delivery times to a matter of hours. (Like if amazon had the same promise of pizza companies with 30min or less delivery) People can place orders by 12pm and receive them by 7am the next morning with their Rocket WOW and Rocket Delivery program (similar to amazon prime and also includes groceries). Customers go to sleep and wake up like it&amp;#39;s Christmas morning with their order right at their door. Same day delivery is offered for FREE, 365 days a year even the night before Christmas if needed. Customers can order anything from tomatoes to TVs for free next day delivery (better than any other delivery e-commerce players in Korea). 70% of the population (mostly in Seoul) lives within 7 miles of a Coupang distribution center. Operations span over 25 million sq ft across 30 cities.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Effortless returns&lt;/strong&gt; by tapping a few buttons on the app or website and leaving the item outside for pickup. No repackaging, no labels, no post office trips. Just leave it outside and any delivery truck nearby will come pick it up within hours. (much easier than amazon, eBay, UPS, FedEx, etc.)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Eco-friendly Packaging&lt;/strong&gt; cuts down the use of cardboard boxes by more than 75%. Items are delivered in a simple sleeve and sorted into protective bins. Eco-friendly bags that are completely reusable and replace almost all disposable packaging. The reusable bags are picked up by the delivery network for further use. Trucks leave full of products and rather than coming back empty, they arrive with returned packages, and the packaging of other orders which are then immediately used once again for another delivery.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Employees&lt;/strong&gt; work 5 day work weeks instead of the industry standard 6. Employees are provided with paid time off and full benefits. (amazon employees don&amp;#39;t even get Amazon Prime. Amazon employees also have not reported the best working conditions. “People aren&amp;#39;t the friendliest” “you&amp;#39;re expected to work like a machine” “Work life balance can be hard” “needs more benefits&amp;#39;&amp;#39; etc.) Coupang Inc will also be granting their frontline workers more than $90M worth of stock and will be the first company in Korea to make their employees shareholders. 70% of suppliers for Coupang are also small merchant and business owners with under $3M in revenue per year. In the pandemic, small businesses on Coupang saw their sales increase by over 50%. Coupang now sits as one of the largest employers in Korea with 50,000+ employees and plans to invest over $870M into building seven new regional fulfillment centers, creating a projected 50,000 additional jobs by 2025.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dynamic Orchestration&lt;/strong&gt; meaning their technology predicts and assigns the fastest and most efficient path for delivery drivers out of hundreds of millions of combinations of inventory, processing, trucks and route options within seconds. Packages are sorted at warehouses into protected, truck ready bins making the loading process much easier and faster for drivers. (can get more orders out faster.)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Services:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Rocket WOW Membership&lt;/strong&gt; is a flat monthly fee membership program which offers unlimited free shipping within hours of a placed order, dawn delivery, free unlimited returns for 30 days and &lt;strong&gt;Rocket Fresh&lt;/strong&gt; groceries which has become the nation wide leading online grocer. The subscription based delivery was launched in October of 2018 and only costs $2.60! Within the first week of launch the service had over 150,000 users sign up and now has more than 1.2M users.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Rocket Delivery&lt;/strong&gt; is Coupangs FREE next day delivery service and the company has said to be delivering close to 2 million products per day which is the highest figure seen since the service was launched in March of 2014. Rocket Delivery continues to be the driving force for Coupang with people constantly wanting things faster, rocket delivery is a promise to customers that they will get their products on time, and when they need them.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Coupang Play&lt;/strong&gt; is a streaming platform branch of Coupang that is offered to their WOW members at no additional cost. Coupang Play is currently available for android users and is expected to be supported by IOS systems sometime this year as well as expanding into smart TVs and PCs. Coupang play has everything from Hollywood movies like the Spider-Man series and “Bombshell&amp;#39;&amp;#39; to popular Korean movies and TV shows. (I’d name them but I don’t think any of us know what they are). Coupang play also has documentaries, educational videos, kids shows, and animations with features like kids mode and parental locks. Coupang play is in the market for exclusivity as well with being the ONLY streaming service in Korea where users are able to watch things like Bryan Cranston&amp;#39;s show “Your Honor” and CNN 10. Stephen Kim, the head of Coupang Play is also on record for saying &lt;em&gt;“We are eager to bring content such as Coupang Play Originals to expand our offerings and make this new service even more enjoyable and convenient for our customers.”&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Coupang Eats&lt;/strong&gt; has also been launched which is now the largest online food delivery service in Korea, which delivers food to customers using only delivery partners directly contracted by Coupang. Coupang Eats also incorporates the tech and infrastructure used for Rocket Delivery and Rocket Fresh making delivery as fast, and efficient as possible.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Coupangs customer centricity&lt;/strong&gt; continues to be their most important asset as 70% of the population is 7 miles from a distribution center. The company has vocally admitted this and consistently and continues to &lt;em&gt;“pursue operational excellence and innovation”&lt;/em&gt; in order to grow this asset and keep the customers they have. Customer Base has also grown by an approximate 14.8 million from 2019 to 2020 (up more than 25%)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Part of Coupangs business model states all of this and I would have re-worded it but it truly is perfect and I don’t think I could have done a better job. When I first read this part of their business model it only furthered my confidence in this company. Not to mention again that this is VERY similar to how Amazon approached their business in the early years. The statement is as follows: &lt;em&gt;“We believe the true measure of our success will be shareholder value created over the long term. Our long-term investments in building a differentiated technology-orchestrated network and customer-facing functionality have helped build a business that we expect will deliver significant growth and cash flows at scale. We have in turn reinvested to expand into new offerings successfully, such as with our owned-inventory selection, Rocket WOW membership, Rocket Fresh, and Coupang Eats, among others. We will continue to reinvest cash flows generated by our established offerings into new initiatives and innovations for our customers. We will choose to invest and maximize value for customers and shareholders in the long term over optimizing our short-term results.”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Top Risks:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Coupang is rapidly evolving which could lead to the inability to manage the growth&lt;/li&gt;
+&lt;li&gt;Coupang plans to forgo short term financial performance for long term growth (Same strategy as Amazon so in my eyes not a downside)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dilution:&lt;/strong&gt; The company has stated that there will be (was) immediate stock dilution to the extent of the difference between the initial public offering price. Though dilution is sometimes seen as a bad thing, out of all the evidence from Coupang and the business model we know they are going to follow, I believe that this dilution is simply to raise money for further expansion. I believe this dilution is why Coupang had a red day on Friday and may continue to be red for the next few weeks or so as it levels out. This does not change my stance on the stock at all just thought it was an interesting point to mention since dilution can be seen as a bad thing as companies sometimes do this in desperation when they may simply need more money to cover expenses. However I think it would be stupid to assume this is the case with Coupang as it is consistently growing its assets and shows no sign of bleeding, as well as just going public. Still though, it lessens shareholders position and lowers P/E which is a measure of profitability, but again, we know Coupang is not focusing on this at the moment. All this changes in my eyes is that I’m going to watch the stock closely over the next few weeks and months to see where it starts to even out and show signs of uptrends and or downtrends.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I have tried looking around for other reasons why Coupang could fail or simply why it could truly not be the next amazon of south Korea but I have yet to find any info. If anyone does, a link would be greatly appreciated and I will edit with new info.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;TDLR:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In my OPINION, based on everything I’ve read and compiled here, I truly think Coupang has Unlimited potential. The company has continued to show strong growth and belief in itself. It&amp;#39;s constantly expanding into new territories as is evident with Coupang Play and Rocket Fresh as well as consistently growing their main assets. Their management team looks very Promising with backgrounds in Amazon, Uber, and A fuck load of computer engineering. Year after year revenue has been up, customer base has been up, and operating loss and net loss have been down. This company looks very promising in my eyes and I definitely will be investing in Coupang in years to come.&lt;/p&gt;
+
+&lt;p&gt;Thanks to everyone who stuck through all this. Again it&amp;#39;s my first ever DD so hopefully it&amp;#39;s not too shit. I put a lot of effort and research into this and I hope y&amp;#39;all gain some insight to this awesome company. PLEASE let me know if there&amp;#39;s anything I should’ve included in this, I am hoping to get a lot better at this whole “stonks” thing. As you may have noticed I haven’t given any info on my position with the stock and that is honestly, simply because I’m waiting for my next paycheck so I can afford to buy some. I currently don’t own shares in Coupang but you can bet your ass I’m buying as much as I can the next time I have money to throw at the market. Wouldn’t you want to get into Amazon in 2005?&lt;/p&gt;
+
+&lt;p&gt;Thanks again, Onions. THIS IS NOT FINACIAL ADVISE&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Sources:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.ben-evans.com/benedictevans/2014/9/4/why-amazon-has-no-profits-and-why-it-works&quot;&gt;https://www.ben-evans.com/benedictevans/2014/9/4/why-amazon-has-no-profits-and-why-it-works&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.glassdoor.ca/Reviews/Amazon-Reviews-E6036.htm&quot;&gt;https://www.glassdoor.ca/Reviews/Amazon-Reviews-E6036.htm&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.sec.gov/Archives/edgar/data/0001834584/000162828021004565/coupang-424b4.htm#i4773fe05195046f8b8cb330d78922a20_576&quot;&gt;https://www.sec.gov/Archives/edgar/data/0001834584/000162828021004565/coupang-424b4.htm#i4773fe05195046f8b8cb330d78922a20_576&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.cnbc.com/video/2021/03/12/south-koreas-coupang-can-be-a-cash-flow-generating-machine.html&quot;&gt;https://www.cnbc.com/video/2021/03/12/south-koreas-coupang-can-be-a-cash-flow-generating-machine.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.forbes.com/profile/bom-kim/?sh=6342a76227d6&quot;&gt;https://www.forbes.com/profile/bom-kim/?sh=6342a76227d6&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.prnewswire.com/news-releases/coupang-dives-into-video-streaming-with-launch-of-coupang-play-301198573.html&quot;&gt;https://www.prnewswire.com/news-releases/coupang-dives-into-video-streaming-with-launch-of-coupang-play-301198573.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://m.koreatimes.co.kr/pages/article.asp?newsIdx=262883&quot;&gt;https://m.koreatimes.co.kr/pages/article.asp?newsIdx=262883&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.investopedia.com/articles/stocks/11/dangers-of-stock-dilution.asp&quot;&gt;https://www.investopedia.com/articles/stocks/11/dangers-of-stock-dilution.asp&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[首次在收市前買入的GME業主]]></title><link>https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m45aw6/first_time_gme_owner_bought_before_market_close/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m45aw6/first_time_gme_owner_bought_before_market_close/</guid><pubDate>Sat, 13 Mar 2021 20:28:37 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[小夥伴們，Costco想告訴我們一些事情......(如果一開始沒有看到，請向左滑動)]]></title><link>https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4bdee/guys_costco_is_trying_to_tell_us_somethingif_at/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4bdee/guys_costco_is_trying_to_tell_us_somethingif_at/</guid><pubDate>Sat, 13 Mar 2021 20:28:37 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[9月份開始用1萬塊錢。我喜歡石頭。]]></title><link>https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m46927/started_with_10k_in_september_i_like_the_stonk/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m46927/started_with_10k_in_september_i_like_the_stonk/</guid><pubDate>Sat, 13 Mar 2021 20:28:37 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[2021年3月12日的週末討論主題。]]></title><description><![CDATA[你的週末討論線。請保持最大限度的屎貼!
+
+在Twitter上關注@Official_WSB [https://twitter.com/Official_WSB]，其他的都可以。
+賬號是冒充的。]]></description><link>https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m3r158/weekend_discussion_thread_for_the_weekend_of/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m3r158/weekend_discussion_thread_for_the_weekend_of/</guid><pubDate>Sat, 13 Mar 2021 20:28:37 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Your weekend discussion thread. Please keep the shitposting to a maximum!&lt;/p&gt;
+
+&lt;p&gt;Follow &lt;a href=&quot;https://twitter.com/Official_WSB&quot;&gt;@Official_WSB&lt;/a&gt; on Twitter, all other accounts are impersonators.&lt;/p&gt;
+&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[興登堡研究公司關於Lordstown的簡短報告。]]></title><description><![CDATA[鏈接[https://hindenburgresearch.com/lordstown/]
+
+報道似乎很有娛樂性。看來LordsTown一直在誇大其詞。
+它的預訂量。
+這句話從CEO的公司有1000個 "預訂單 "是堅果。
+我們所做的是我們主辦和支持與公司的活動，然後我們... ...]]></description><link>https://stocks.buzzing.cc/reddit/r/investing/comments/m497ai/hindenburg_researchs_short_report_on_lordstown/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/investing/comments/m497ai/hindenburg_researchs_short_report_on_lordstown/</guid><pubDate>Sat, 13 Mar 2021 19:41:03 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://hindenburgresearch.com/lordstown/&quot;&gt;Link&lt;/a&gt; &lt;/p&gt;
+
+&lt;p&gt;The reports seems pretty entertaining. It seems LordsTown has been exaggerating the amount of pre-orders it has.&lt;br/&gt;
+This quote from the CEO a company with 1000 &amp;quot;pre-orders&amp;#39; is nuts.&lt;br/&gt;
+ &lt;em&gt;What we do is we host and support events with companies and then we invite Lordstown Motors to the event to show the product. We just direct the company to Lordstown directly. When they tell us they’re interested in purchasing trucks that’s what we do.&lt;/em&gt; &lt;strong&gt;We don’t get involved in the actual ordering.&lt;/strong&gt;&lt;em&gt;”&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[$GME DD，週五OPEX 3/12事後，警告Gamma decrease。]]></title><description><![CDATA[https://preview.redd.it/ltafulxf2qm61.png?width=400&format=png&auto=webp&s=ae93ec64ec0c8db60c19536b0714b2e184d5c065
+
+好的，這個DD是分析猿人可以在哪些方面做得更好，以及如何解決的問題
+
+"他們說股票會到300點... 他們說我們後面有成交量... 買入
+靠近ITM的電話，他們...]]></description><link>https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m3zh49/gme_dd_friday_opex_312_post_mortem_warning_gamma/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m3zh49/gme_dd_friday_opex_312_post_mortem_warning_gamma/</guid><pubDate>Sat, 13 Mar 2021 19:20:41 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://preview.redd.it/ltafulxf2qm61.png?width=400&amp;amp;format=png&amp;amp;auto=webp&amp;amp;s=ae93ec64ec0c8db60c19536b0714b2e184d5c065&quot;&gt;https://preview.redd.it/ltafulxf2qm61.png?width=400&amp;amp;format=png&amp;amp;auto=webp&amp;amp;s=ae93ec64ec0c8db60c19536b0714b2e184d5c065&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Ok, this DD is to analyze what apes could&amp;#39;ve done better, and how to address it&lt;/p&gt;
+
+&lt;p&gt;&amp;quot;&lt;strong&gt;&lt;em&gt;The stock will hit 300 they said... we have volume behind us they said... buy near ITM calls they said.&amp;quot;&lt;/em&gt;&lt;/strong&gt; &lt;a href=&quot;/u/baturu&quot;&gt;/u/baturu&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.reddit.com/r/wallstreetbets/comments/m3re9y/the_stock_will_hit_300_they_said_we_have_volume/&quot;&gt;https://www.reddit.com/r/wallstreetbets/comments/m3re9y/the_stock_will_hit_300_they_said_we_have_volume/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://preview.redd.it/yepmphzd2qm61.png?width=960&amp;amp;format=png&amp;amp;auto=webp&amp;amp;s=4c85964a864ce5531256d548417fde8c5bf6ce2e&quot;&gt;https://preview.redd.it/yepmphzd2qm61.png?width=960&amp;amp;format=png&amp;amp;auto=webp&amp;amp;s=4c85964a864ce5531256d548417fde8c5bf6ce2e&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;ve just noticed the OP of that lost porn did send me a pm, but I didn&amp;#39;t reply.(my bad)&lt;/p&gt;
+
+&lt;p&gt;To be clear, here&amp;#39;s a quote from my Donkey Kong DD, Monday Morning 3/8&lt;/p&gt;
+
+&lt;p&gt;&amp;quot;&lt;strong&gt;&lt;em&gt;🦍 🦍 🦍 optimize your stimmy 🍌🍌🍌, $GME gamma squeeze calculator update&amp;quot;&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.reddit.com/r/wallstreetbets/comments/m0eeav/optimize_your_stimmy_gme_gamma_squeeze_calculator/&quot;&gt;https://www.reddit.com/r/wallstreetbets/comments/m0eeav/optimize_your_stimmy_gme_gamma_squeeze_calculator/&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The 3/12 270C, if apes were to buy one contract, 3.04 x 100 = $304, then MMs would need to hedge 0.137x100x137.74 = $1882 worth of shares to remain delta neutral  &lt;/p&gt;
+
+&lt;p&gt;Giving an amplification factor of  &lt;/p&gt;
+
+&lt;p&gt;1 🍌 -&amp;gt; 6 🍌  &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;OTM calls like these might be fine for YOLO-ers 🦍 , but carry very high risk of 🦍 loosing all 🍌, if 3/12 closing price ends below 270. A safer way for 🦍, would probably be ITM calls, somewhere around the 100-110C strike price&lt;/em&gt;&lt;/strong&gt;  &lt;/p&gt;
+
+&lt;p&gt;This would still gives 1 🍌 -&amp;gt; 3 🍌 in delta hedge amplification&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The 270C 3/12 was then quoted by the Forbes article on gamma swarm, Wednesday Night 3/10&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.forbes.com/sites/georgecalhoun/2021/03/10/gamestop-the-second-surgeanatomy-of-a-gamma-swarm/?sh=6af3a3a64225&quot;&gt;https://www.forbes.com/sites/georgecalhoun/2021/03/10/gamestop-the-second-surgeanatomy-of-a-gamma-swarm/?sh=6af3a3a64225&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Imagine that a swarm of, say, 10,000 members, each invested $1,000 in GME $270 call options for Friday March 12. The March 9 cost of the option is $24. If all option sellers hedged, it could drive perhaps $100 million of share volume, at the then current prices.  &lt;/p&gt;
+
+&lt;p&gt;...  &lt;/p&gt;
+
+&lt;p&gt;A naked March 12 call option with a strike price of $270 would have exposed the seller to a loss of $56 a share. It is highly likely that the sellers of such options would have allowed themselves to be exposed to this risk. They would have covered, hedged, by purchasing shares – adding to the surge. Gamma power!]&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;What most of you degenerates did was this instead&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;800    -207.69%    0.4 0.41    0.41    0.41    -1.93   -82.48% 27,536  29,496  0.93    860.47% Call    3/11/2021  &lt;/p&gt;
+
+&lt;p&gt;800    -202.46%    0.01    0.01    0.01    0.01    -2.33   -99.57% 76,466  36,239  2.11    615.31% Call    3/12/2021&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;G&amp;#39;damn degenerates piling into the 800C 3/12; Look, that far OTM have too low delta to trigger MMs forced buying. 🦍🦍🦍, is not every day you can trigger the gamma squeeze, some brokers are even actively trying to block it as seen by this post from an ape being blocked buying calls and puts by his broker of fear triggering a gamma squeeze.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;&amp;quot;🛸🛸🛸Tinfoil Hats Required 🛸🛸🛸&amp;quot;&lt;/em&gt;&lt;/strong&gt; &lt;a href=&quot;/u/Heavy-Ad-2498&quot;&gt;u/Heavy-Ad-2498&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.reddit.com/r/wallstreetbets/comments/m3yews/tinfoil_hats_required/&quot;&gt;https://www.reddit.com/r/wallstreetbets/comments/m3yews/tinfoil_hats_required/&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;In both cases, I was LITERALLY told by my brokerage ON A RECORDED LINE that the decision was made to protect the Market Makers from having to hedge and in turn causing a gamma squeeze????&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;They are trying to limit new 0DTE options writing to prevent gamma squeeze on OPEX, but most brokers should still allow you to buy weeklies on $GME.&lt;/p&gt;
+
+&lt;p&gt;Looking at this graph, the Calls OI falls dramatically after 3/19&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://preview.redd.it/68ultrl34qm61.jpg?width=755&amp;amp;format=pjpg&amp;amp;auto=webp&amp;amp;s=2fdcd61bd77cda27ed76e7f7b7e2a54aaf6e0c25&quot;&gt;https://preview.redd.it/68ultrl34qm61.jpg?width=755&amp;amp;format=pjpg&amp;amp;auto=webp&amp;amp;s=2fdcd61bd77cda27ed76e7f7b7e2a54aaf6e0c25&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;and with it the gamma amplification affect. With the 3/12 gone, that&amp;#39;s almost 30% of the calls OI, but you still have 3/19 that accounts for another 30% of calls OI. The stimmy should be hitting your bank account in the next few days, there&amp;#39;s still a chance for gamma.&lt;/p&gt;
+
+&lt;p&gt;I have no opinion on the short interest, maybe hedgies covered, maybe they printed shares out of thin air, I don&amp;#39;t know. But they have been increasingly shorting via puts this past few weeks, this helps the gamma squeeze a bit though not as much as calls.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://preview.redd.it/3rut9av74qm61.jpg?width=685&amp;amp;format=pjpg&amp;amp;auto=webp&amp;amp;s=64f835a0daa0f4f1236f9b5302458a4b2ae21afc&quot;&gt;https://preview.redd.it/3rut9av74qm61.jpg?width=685&amp;amp;format=pjpg&amp;amp;auto=webp&amp;amp;s=64f835a0daa0f4f1236f9b5302458a4b2ae21afc&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The graph shows that hedgies think 🦍🦍🦍 attention  span is limited to a few months a best, and they are betting heavily $GME will fall within a few weeks from now.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;#39;s some graphs courtesy of &lt;a href=&quot;/u/HAVE__A_NICE__DAY&quot;&gt;/u/HAVE__A_NICE__DAY&lt;/a&gt;, she&amp;#39;s an ex hedgies quant who needs karma to post, if u like her graphs upvote her comments.\&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://preview.redd.it/4yahdek94qm61.png?width=533&amp;amp;format=png&amp;amp;auto=webp&amp;amp;s=04baf8fe07260d2a5468a9c84bf8f7ac96e1f7c4&quot;&gt;https://preview.redd.it/4yahdek94qm61.png?width=533&amp;amp;format=png&amp;amp;auto=webp&amp;amp;s=04baf8fe07260d2a5468a9c84bf8f7ac96e1f7c4&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;sup&gt;$GME Price probability based on IV&lt;/sup&gt; &lt;a href=&quot;https://imgur.com/a/gyN0nsA&quot;&gt;&lt;sup&gt;https://imgur.com/a/gyN0nsA&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;sup&gt;$GME IV Put/Call Inversion on long dated options&lt;/sup&gt; &lt;a href=&quot;https://imgur.com/a/HjvbyJx&quot;&gt;&lt;sup&gt;https://imgur.com/a/HjvbyJx&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;According to her : &amp;quot;blue is the implied vol from puts, red is the implied vol from calls; higher IV means it&amp;#39;s trading at higher premium, so puts are more expensive as you go further out in time. &lt;strong&gt;so in the near term, puts are cheap because hedgies are too chicken to buy puts even thought they think the stock is &amp;lt;50 then in the medium-long term (july and onward) calls vs puts premiums flip because hedgies are buying more long-dated puts&amp;quot;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I can&amp;#39;t comment on the business transformation, I&amp;#39;m not an e-commerce expert, I don&amp;#39;t know what it would take for $GME to compete with steam and etc. What I do know for sure is that, if $GME is bought by X% of float net buy EOD, share price will close up Y% EOD. You can amplify your share buying effect by buying calls at SPECIFIC STRIKES AND EXPIRIES. If you bought shares, it would take around 355 MM USD of net buy inflow to raise the price by 20% EOD, with ITM(safer)/ATM calls and the gamma amplification it would only take ~18 MM USD on the ITM/ATM calls 3/12 before 3/12 expiry.&lt;/p&gt;
+
+&lt;p&gt;With the 3/12 now  expired, the amp factor and general cascading gamma effect will be lower, around ~ 40 MM USD net ITM(safer)/ATM calls needed.(that&amp;#39;s about 40,000 🦍🦍🦍 each with 1k 🍌🍌🍌)&lt;/p&gt;
+
+&lt;h1&gt;TL;DR 3/19 would be the last significant gamma squeeze opportunity based on current OI,🦍🦍🦍 together strong, YOLO-ers 🦍🦍🦍 buying 800C not helping.&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Edit 2 : From&lt;/strong&gt; &lt;a href=&quot;/u/JunkTheRat&quot;&gt;/u/JunkTheRat&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;NEW TRADING RESTRICTIONS On GME:&lt;/strong&gt; &lt;a href=&quot;https://www.tdameritrade.com/td-ameritrade-trading-restrictions-stocks.page&quot;&gt;TD AMERITRADE - RESTRICTIONS ON GME&lt;/a&gt;  &lt;/p&gt;
+
+&lt;p&gt;Opening orders on short individual options are not allowed with the exception of cash-secured puts or covered calls, which must be placed through a broker.  &lt;/p&gt;
+
+&lt;p&gt;If you currently own stock in one of these securities and wish to sell a covered call, you must do so with a broker. Please be aware that wait times to speak with a broker may be longer than normal due to current market conditions.  &lt;/p&gt;
+
+&lt;p&gt;If you have no position and wish to simultaneously buy stock and sell calls against it, you may enter it as a covered stock (buy/write) order online.  &lt;/p&gt;
+
+&lt;p&gt;We May Also Implement Additional Requirements On Opening Trades On Options That Expire 3/19.  &lt;/p&gt;
+
+&lt;p&gt;Above seems to back up &lt;a href=&quot;https://www.reddit.com/u/Heavy-Ad-2498&quot;&gt;u/Heavy-Ad-2498&lt;/a&gt; claim that they were told by their Broker on the phone that they were restricted from opening a new position in order to protect Market Makers from a Gamma Squeeze.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Edit 2: Add more pictures with colors from&lt;/strong&gt; &lt;a href=&quot;/u/CalamariAce&quot;&gt;/u/CalamariAce&lt;/a&gt; &lt;strong&gt;since 🦍🦍🦍 no like read&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://preview.redd.it/fjt3hmw5trm61.jpg?width=1221&amp;amp;format=pjpg&amp;amp;auto=webp&amp;amp;s=1b5a0389d346a511aa36f9a2f5610787d05f0182&quot;&gt;https://preview.redd.it/fjt3hmw5trm61.jpg?width=1221&amp;amp;format=pjpg&amp;amp;auto=webp&amp;amp;s=1b5a0389d346a511aa36f9a2f5610787d05f0182&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://preview.redd.it/x1dq84z6trm61.jpg?width=1177&amp;amp;format=pjpg&amp;amp;auto=webp&amp;amp;s=f9a217eef41c94ec00e6263dd632ec9527ce1d96&quot;&gt;https://preview.redd.it/x1dq84z6trm61.jpg?width=1177&amp;amp;format=pjpg&amp;amp;auto=webp&amp;amp;s=f9a217eef41c94ec00e6263dd632ec9527ce1d96&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;EDIT 3 : I see many 🦍🦍🦍 haven&amp;#39;t grasped just how much power the gamma squeeze can contain.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Buying 1 Contract of 270C 3/12 on Friday afternoon 3/5  or Monday morning 3/8, at the price of 3-5USD per contract(100 shares) / $ 300 with &lt;strong&gt;6x initial delta amplification&lt;/strong&gt; would have resulted in &lt;strong&gt;42x amplification&lt;/strong&gt;  value of shares delta hedged by MMs in Thursday or Friday open of about $13,000. Since the delta of the contract increased 0.12 to 0.49 and the share prices rose from 137 to 260-290 within that time.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Edit 4&lt;/strong&gt; : I&amp;#39;m not saying the short squeeze or a fundamental business transformations/earnings beat won&amp;#39;t happen. What I&amp;#39;m saying is the best chance for another gamma squeeze is 3/19.&lt;/p&gt;
+&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[我在高中教書，這意味着我每天都在給白癡解釋事情。如果你還是不懂期權，那我就抓住你了 If you still don't understand call options, I got you.]]></title><description><![CDATA[我看到很多人問了很多關於電話的基本問題，幾乎每一個
+提到他們的線程。所以在這裏，你就可以了。
+
+注意：在金融專業的同學出來挑剔小事之前，請記住
+這是爲白癡提供的基本入門知識，其中一些內容已被簡化。
+
+什麼是呼叫選項：...]]></description><link>https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4a87a/i_teach_high_school_which_means_i_explain_things/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m4a87a/i_teach_high_school_which_means_i_explain_things/</guid><pubDate>Sat, 13 Mar 2021 19:20:41 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;I see a lot of people asking basic questions about calls on just about every thread that mentions them. So here you go.&lt;/p&gt;
+
+&lt;p&gt;Note: before the finance majors come out and nitpick small things, remember that this is a basic primer for idiots; some of it has been simplified.&lt;/p&gt;
+
+&lt;p&gt;WHAT IS A CALL OPTION: BASICS&lt;/p&gt;
+
+&lt;p&gt;A call option (hereafter referred to simply as a &amp;quot;call&amp;quot;) is a contract that gives you the ability, though not the obligation, to buy 100 shares of a stock for a specific price by a specific date, called the expiration date. Example: You buy a $400 call for GME that expires on March 19th. What that means is that at any time between now and end-of-day on 3/19, you can buy 100 shares of GME for $400. If the price spikes to $700 dollars, you can still buy them for $400. That&amp;#39;s a pretty good deal.&lt;/p&gt;
+
+&lt;p&gt;So I need the price of GME to get to $400 to break even, and anything above that is profit, right? Not quite. You have to pay a premium for the option, which is the amount of money you&amp;#39;re giving to the option seller in exchange for the contract. The premium is listed as the price per share, so if the option has a $2 premium, that means that you have to pay $2 per share of GME in the contract, which means that you pay $200 the buy the call ($2/share x 100 shares). You give the seller $200, and they give you the call option. Since you paid $200 for the option, this means that your break even price is $402 dollars per share. Why? Because if the price only got to $400, you could have bought it for $400/share without buying the contract, which means the money you spend on the contract was a waste. However, if the price goes to $403/share, then you make a profit, because you effectively paid $402/share for a stock worth $403/share.&lt;/p&gt;
+
+&lt;p&gt;But what if the price doesn&amp;#39;t go up, or even goes down? Do I have to still buy those shares for $400? No. You never have to buy the shares if you don&amp;#39;t want to. Remember, a call gives you the ability to buy shares for $400, but not the obligation.&lt;/p&gt;
+
+&lt;p&gt;But what if the price of GME goes way up but I don&amp;#39;t have $40,000 around to buy 100 shares at $400/share? Then you sell the contract to someone who either does have $40,000 sitting around, or (slightly advanced info here that you don&amp;#39;t need to know) to someone who is trying to offset a position. Regardless of who buys it, they will pay you a lot of money for your option because it is ITM, or in the money. What does that mean? Let&amp;#39;s look at some option vocabulary.&lt;/p&gt;
+
+&lt;p&gt;CALL OPTION VOCABULARY&lt;/p&gt;
+
+&lt;p&gt;Strike Price: This is the price that you are allowed to pay for the stock per the contract. In our $400 call option above, the strike price is $400. At any time before the expiration date, you are allowed to exercise the contract the contract and pay $400/share for the stock.&lt;/p&gt;
+
+&lt;p&gt;Exercise: Exercising an option means you are exercising your ability to buy the 100 shares of stock. In the example above, you would spend $40,000 for 100 shares of stock regardless of the stock&amp;#39;s price at the time. Can I exercise and only buy 20 shares of stock? No. If you can&amp;#39;t afford to exercise, then you can sell your option to someone else.&lt;/p&gt;
+
+&lt;p&gt;Expiration Date: This is when your call expires. if you have a 3/19 expiration date, that means that your call option is no longer good after 3/19&lt;/p&gt;
+
+&lt;p&gt;Premium: The premium is the price you pay to the call-seller for the contract, and it is listed as the price per share. Knowing that, how much will it cost to buy an option with a premium of .25? If you do the math, it will cost you $25, which is .25/share x 100 shares.&lt;/p&gt;
+
+&lt;p&gt;ITM and OTM: &amp;quot;In the Money,&amp;quot; and &amp;quot;Out of the Money.&amp;quot; ITM calls are calls for which the stock price has exceeded the strike price. If you have a $400 call, and the price of GME goes to $405, then your call is ITM because you can buy a $405 stock for $400. If you then immediately sold the stock for $405, you&amp;#39;d make money. OTM calls are calls for which the stock price is below the strike price. If you have a $400 call and the price of GME is $350, then your call is OTM. It is important to realize that being ITM doesn&amp;#39;t mean being profitable. In the example above of the $400 call with a $2 premium, if GME goes to $401, you are ITM because 401&amp;gt;400, but you haven&amp;#39;t broken even yet because your break-even price is $402.&lt;/p&gt;
+
+&lt;p&gt;FDs: FD is not an investment term, and you don&amp;#39;t need to know what it means in order to understand calls. It is a WSB term, and it stands for maggot&amp;#39;s delight (but with an F, because autmod won&amp;#39;t let me define FDs). FDs are OTM calls with short expirations, and as such are a huge gamble. &lt;a href=&quot;https://www.reddit.com/r/wallstreetbets/comments/m3r3v2/found_out_how_to_buy_call_options_yesterday/&quot;&gt;The guy who spent 90k on 1dte (1 &amp;quot;day to expiration&amp;quot;) OTM GME calls?&lt;/a&gt; Those were all FDs, and they all expired worthless. Why are they called FDs? Because when you buy FDs, you usually end up taking it in the ass.&lt;/p&gt;
+
+&lt;p&gt;WHEN PEOPLE LIST THEIR OPTION POSITIONS, THEY USE A BUNCH OF NUMBERS AND LETTERS THAT I DON&amp;#39;T UNDERSTAND. HOW DO I FIGURE OUT WHAT THEY&amp;#39;RE TALKING ABOUT&lt;/p&gt;
+
+&lt;p&gt;You have probably seen something like this: GME $400c 3/19. Let&amp;#39;s break it down.&lt;/p&gt;
+
+&lt;p&gt;GME $400c 3/19 - The GME stands for Gamestop, which you probably figured out. The $400c is a call option with a strike price of $400. If it said $400p, it would be a put option, but we&amp;#39;ll talk about those later. The 3/19 stands for the expiration date.&lt;/p&gt;
+
+&lt;p&gt;Now let&amp;#39;s make it more complicated. If I said, &amp;quot;I bought 10 $5 GME $800c 3/19,&amp;quot; what do I mean?&lt;/p&gt;
+
+&lt;p&gt;It means that I bought ten contracts of GME $800 calls with a 3/19 expiration, and I paid $5 per share. If I paid $5 per share, how much did I spend on my contracts? I spent $5,000 ($5/share x 100 shares x 10 contracts).&lt;/p&gt;
+
+&lt;p&gt;Now you try it. A $700 call on GME that expires next week costs around seven bucks a share. How would you explain to me that you bought two of them?&lt;/p&gt;
+
+&lt;p&gt;You would say that you bought 2 $7 GME $700c 3/19. Now you can look like you know what you&amp;#39;re talking about even though you still probably don&amp;#39;t.&lt;/p&gt;
+
+&lt;p&gt;WHY DO PEOPLE BUY CALL OPTIONS?&lt;/p&gt;
+
+&lt;p&gt;This is confusing. Why do people even do this? People buy call options because you can make a lot of money. If you have the right to buy 100 shares of something for a fixed price, then for every $1 the share price goes above your break-even price, you make $100. If you have a $400c with a break even of $402, and the price gets to $412, then you make $1,000 profit. That&amp;#39;s $10 of profit ($412-$402) times 100 shares. You can buy the shares and hold them, or you can buy them and sell them immediately to realize that profit. Or you can sell the contract to someone else and just take the money. It is usually better to sell the contract, but that&amp;#39;s not an important distinction because most of you can&amp;#39;t afford to exercise anyway, and will be selling contracts.&lt;/p&gt;
+
+&lt;p&gt;WHY ARE CALLS DANGEROUS?&lt;/p&gt;
+
+&lt;p&gt;When you buy a stock, at least you own the stock. If you buy an option and it expires worthless, then you have nothing. If the guy who bought 90k worth of FDs had bought 90k worth of GME and held, then he&amp;#39;d still have somewhere around 90k worth of GME, +/- 5% depending on when he bought on Thursday. Instead, he has nothing.&lt;/p&gt;
+
+&lt;p&gt;WHY DOES THE VALUE OF MY CALL KEEP CHANGING&lt;/p&gt;
+
+&lt;p&gt;So you bought a call option, and every time you look at it it&amp;#39;s worth a different amount of money. That&amp;#39;s because there are actually two types of value in an option: options have Intrinsic Value, and Extrinsic Value.&lt;/p&gt;
+
+&lt;p&gt;Intrinsic Value is the exercisable value of the option, If you own a $400c, and the price is $412, then the intrinsic value of the option is $12/share, or $1200, because that&amp;#39;s the value you would get if you exercised it right now. as stock price goes up, intrinsic value goes up. Pretty easy.&lt;/p&gt;
+
+&lt;p&gt;Extrinsic Value has a more complicated definition, so we&amp;#39;re going to call Extrinsic Value the potential the option has, and that potential is based on time and volatility. For example, if there is a long time before expiration, then that means that there is more potential for the option to go ITM, because more time = more chances for the price to rise. Therefore, options further from expiration will be worth more than options close to expiration. Conversely, less time to expiration = less value, which means that your option can constantly lose value as time goes on and the number of chances you have to go ITM decreases. This is called theta decay, but you don&amp;#39;t need to worry about that.&lt;/p&gt;
+
+&lt;p&gt;Volatility is the second part of extrinsic value, and options for stocks that are more volatile can be worth more than options for stocks that trade steadily, because if a stock price swings wildly up and down, there&amp;#39;s a greater chance that one of those upswings will put you ITM. This is reflected in a measurement called IV, or Implied Volatility. Like Theta Decay, IV is a more advanced concept that you don&amp;#39;t need to understand now as long as you get the basics.&lt;/p&gt;
+
+&lt;p&gt;Due to the factors of time (theta) and volatility (IV) constantly changing, the extrinsic value of your option will also change over time. This is why the value of your option will constantly change. Is the stock calming down and starting to trade sideways (low volatility)? Your option value will decrease as IV drops. Is the stock starting to jump around? Your option value will increase as IV increases.&lt;/p&gt;
+
+&lt;p&gt;Sometimes the stock price can be climbing slowly but the value of your option can be decreasing. Why do you think that is? If the stock value is increasing slowly, but you&amp;#39;re way OTM and running out of time because your option expires tomorrow, the downward price pressure of theta decay can overcome the upward price pressure of volatility and stock price rise, and your option value can decrease.&lt;/p&gt;
+
+&lt;p&gt;I BOUGHT A CALL AND I&amp;#39;M ITM! HOW/WHEN DO I SELL MY CONTRACTS&lt;/p&gt;
+
+&lt;p&gt;You can sell your contracts at any time. You don&amp;#39;t have to wait until the expiration to sell your contracts. This is good, because if the price spikes, you can dump your options for profit and move on. There was a point yesterday when 90k FD guy&amp;#39;s 275 and 285 calls were ITM when GME spiked to 290. If he had sold then, he wouldn&amp;#39;t have lost everything by waiting until expiration.&lt;/p&gt;
+
+&lt;p&gt;I BOUGHT A CALL AND I&amp;#39;M ITM! HOW/WHEN DO I EXERCISE MY CONTRACTS&lt;/p&gt;
+
+&lt;p&gt;Make sure that you have enough money to cover buying all the shares and click the exercise button. They get your money, and you get their shares. This can take some time.&lt;/p&gt;
+
+&lt;p&gt;OK. I GET IT. BUT CAN YOU GIVE ME A TL:DR JUST IN CASE I ACTUALLY DON&amp;#39;T GET IT&lt;/p&gt;
+
+&lt;p&gt;A call option is a contract to buy 100 shares of a stock at a certain price. To buy the contract, you pay a premium to the contract seller. If the price of the stock goes above the price of your contract, you can either buy the shares or sell the contract for profit.&lt;/p&gt;
+
+&lt;p&gt;The End.&lt;/p&gt;
+
+&lt;p&gt;SO I&amp;#39;M AN EXPERT NOW AND CAN GO YOLO EVERYTHING ON CALLS AND MAKE MONEY?&lt;/p&gt;
+
+&lt;p&gt;No. You have a basic understanding of how calls work and know just enough to be dangerous. Don&amp;#39;t go crazy. Buy a call. See how it works for real. Don&amp;#39;t YOLO your life savings on your newfound knowledge. Or do. Live your life how you want; I&amp;#39;m not your dad. Just make sure you post the porn when you win or lose.&lt;/p&gt;
+&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[比特幣60000美元。$BTC https://t.co/OJbbYJOJKj]]></title><link>https://stocks.buzzing.cc/tweet/1370719220347113472</link><guid isPermaLink="false">https://stocks.buzzing.cc/tweet/1370719220347113472</guid><pubDate>Sat, 13 Mar 2021 17:48:37 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[過去一週，美國的科維德-19住院人數下降了12%，這是連續第59天周環比下降。比1月6日的峯值下降了72%。🙏 https://t.co/mJGOeBXmHX。]]></title><link>https://stocks.buzzing.cc/tweet/1370738235673096194</link><guid isPermaLink="false">https://stocks.buzzing.cc/tweet/1370738235673096194</guid><pubDate>Sat, 13 Mar 2021 17:48:37 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[爲什麼有些人討厭凱西-伍德？
+
+https://t.co/NzzDG5xvTy]]></title><link>https://stocks.buzzing.cc/tweet/1370727957392687107</link><guid isPermaLink="false">https://stocks.buzzing.cc/tweet/1370727957392687107</guid><pubDate>Sat, 13 Mar 2021 17:48:37 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[週四盤前還有人買入GME嗎，就在Robin Hood拉出所有的BS之前？只有我嗎？好吧，那麼 🦍💎🧤🚀💯。]]></title><link>https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m3sz4a/did_anyone_else_buy_gme_in_the_premarket_on/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m3sz4a/did_anyone_else_buy_gme_in_the_premarket_on/</guid><pubDate>Sat, 13 Mar 2021 17:16:46 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[GME紀錄片預告片--（長期潛伏，這是我的署名）。]]></title><link>https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m46jh9/gme_documentary_trailer_longtime_lurker_this_is/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m46jh9/gme_documentary_trailer_longtime_lurker_this_is/</guid><pubDate>Sat, 13 Mar 2021 17:16:46 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[雷諾有了新的現金戰略，可以使其成爲被低估的電動車玩法]]></title><description><![CDATA[似乎雷諾可能會浮現他的價值與他的14億美元的銷售
+價值10億美元的股份在戴姆勒，同時加強他的位置，作爲一個電動車的
+生產商。
+
+他們剛剛推出了達契亞Spring，這是歐洲最便宜的電動車，也是一款非常的。
+可能的頂級賣家的細節和公司。最重要的是...]]></description><link>https://stocks.buzzing.cc/reddit/r/investing/comments/m3p454/renault_has_new_cash_for_a_strategy_that_could/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/investing/comments/m3p454/renault_has_new_cash_for_a_strategy_that_could/</guid><pubDate>Sat, 13 Mar 2021 15:57:40 GMT</pubDate><content:encoded>&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;It seems Renault could be surfacing his value with the selling of his $1.4 billion worth stake in Daimler, meanwhile strengths his position as an EV producer.  &lt;/p&gt;
+
+&lt;p&gt;They has just launched Dacia Spring, the cheapest EV car in Europe and a very possible TOP seller by particulars and companys. On top of that Nissan (owned by Renault in a 43%) will release Nissan Ariya soon, and the Renault Megane Evision will follow next this year.&lt;/p&gt;
+
+&lt;p&gt;Both Nissan Ariya and Megane Evision will use for the first time the new dedicated EV platform which some position as even better than the one from VW. This year probably will be presented the new Alpine premium and only EV brand models. Besides, they have also announced other EV cars like the Renault R5 and R4 for 2023-2024.&lt;/p&gt;
+
+&lt;p&gt;With this in mind, Renault possibly will still have a hard year for restrictions for COVID and semiconductors shortage, but with Luca de Meo leading and a very well positioned EV platform, the current valuation maybe will be hard to understand in a not very long future.&lt;/p&gt;
+
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.marketwatch.com/story/renault-has-new-cash-for-a-strategy-that-could-make-it-an-undervalued-ev-play-says-ubs-11615565876?siteid=yhoof2&quot;&gt;https://www.marketwatch.com/story/renault-has-new-cash-for-a-strategy-that-could-make-it-an-undervalued-ev-play-says-ubs-11615565876?siteid=yhoof2&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;quot;Renault announced on Friday that it had successfully sold its entire  ownership stake in Mercedes-Benz-owner, reaping €1.14 billion ($1.4  billion) from nearly 16.5 million shares sold at €69.50 per share. The  sale represents 1.54% of Daimler’s share capital sold at a near 4%  discount, based on the stock price at the close on Thursday.&lt;/p&gt;
+
+&lt;p&gt;UBS upgraded Renault from neutral to buy on March 2 and increased the  12-month target price on the stock from €22 to €54. Based on the share  price on Friday, this means the stock has legs to climb nearly 37%  higher, according to UBS.&lt;/p&gt;
+
+&lt;p&gt;Should the stock market come to appreciate Renault’s EV strategy, UBS  said, this could trigger a rerating of the stock from between double the  current rating to six times the current rating, depending on the  valuation metric used.&lt;/p&gt;
+
+&lt;p&gt;The company has “all the tools to sell competitive EV products in a cost  efficient manner,” the analysts said, with its design platform on par  with market-leader Volkswagen’s. In addition, UBS said that a key  differentiator for Renault compared with other manufacturers is that the  company is past its research and development peak, with a  fully-dedicated EV platform already built.&amp;quot;&lt;/p&gt;
+&lt;/div&gt;&lt;!-- SC_ON --&gt;</content:encoded></item><item><title><![CDATA[做了一個模擬器，以可視化我們將如何擊敗對沖基金 @350 BROTHERS WE ARE COMING TO GET YOU 🦍💎🦍。]]></title><link>https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m3oys4/made_a_simulator_to_visualize_how_well_beat_the/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m3oys4/made_a_simulator_to_visualize_how_well_beat_the/</guid><pubDate>Sat, 13 Mar 2021 15:50:14 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[比特幣年度收益...
+
+$BTC https://t.co/OBbqNkF1Ll]]></title><link>https://stocks.buzzing.cc/tweet/1370719823928377354</link><guid isPermaLink="false">https://stocks.buzzing.cc/tweet/1370719823928377354</guid><pubDate>Sat, 13 Mar 2021 14:38:21 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[他媽的，爲什麼不🦍🦍🌙]]></title><link>https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m3t1jp/fuck_it_why_not/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m3t1jp/fuck_it_why_not/</guid><pubDate>Sat, 13 Mar 2021 14:25:14 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[實現了我對GME第二部分的賭注。]]></title><link>https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m3w9yp/fulfilling_my_bet_on_gme_part_ii/</link><guid isPermaLink="false">https://stocks.buzzing.cc/reddit/r/wallstreetbets/comments/m3w9yp/fulfilling_my_bet_on_gme_part_ii/</guid><pubDate>Sat, 13 Mar 2021 14:25:14 GMT</pubDate><content:encoded></content:encoded></item></channel></rss>
